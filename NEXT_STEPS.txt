@@ -1,0 +1,10 @@
+AeroMDO website – next steps
+
+1. Replace/update the About section image.
+2. Replace/update Research Areas images and improve image quality/resolution.
+3. Replace publication-10 placeholder images with a representative figure from each of the eight latest publications.
+4. Fill the Summary sections of the newly created project pages.
+5. Events & Posts is currently manually curated with LinkedIn post URLs; it is not an automatic LinkedIn feed. Decide whether to keep manual curation or implement an approved LinkedIn/API-based integration.
+6. Review/update Events & Posts with 2026 AeroMDO Lab events, awards and announcements.
+
+7. Add/export the four selected LinkedIn post images using these filenames under images/index-posts/: wccm2026.jpeg, pinar-acar-2026.jpeg, wccm2026-announcement.jpeg, academic-performance-award-2026.jpeg.
