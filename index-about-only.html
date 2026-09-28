@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<!-- SEO Meta Tags -->
+<meta content="AeroMDO (Aerospace Multidisciplinary Design Optimization) Lab's purpose is to develop leading-edge aerospace &amp; defense technology and to move these out of the lab into the real world. Its current research interests mainly focus on a number of disciplines and techniques: Aerodynamics, Aerospace Structures, Multidisciplinary Design Optimization, Aeroelastic Optimization, Aeroelasticity, Fluid-Structure Interaction, Sonic Boom Minimization, Uncertainty Quantification, Reliability-Based Design Optimization, Reduced Order Modeling, Multi-Fidelity Modeling, and Scientific Machine Learning." name="description"/>
+<meta content="Aerospace Multidisciplinary Design Optimization Laboratory" name="author"/>
+<!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+<meta content="ITU Aerospace Multidisciplinary Design Optimization Laboratory" property="og:site_name"/> <!-- website name -->
+<meta content="https://aeromdo.itu.edu.tr/" property="og:site"/> <!-- website link -->
+<meta content="ITU AeroMDO Lab" property="og:title"/> <!-- title shown in the actual shared post -->
+<meta content="Posted on AeroMDO Lab's website" property="og:description"/> <!-- description shown in the actual shared post -->
+<meta content="https://aeromdo.itu.edu.tr/images/index-projects/projects-1.jpg" property="og:image"/> <!-- image link, make sure it's jpg -->
+<meta content="https://www.linkedin.com/company/aeromdolab" property="og:url"/> <!-- where do you want your post to link to -->
+<meta content="article" property="og:type"/>
+<!-- Website Title -->
+<title>ITU AeroMDO Lab - Istanbul Technical University Aerospace Multidisciplinary Design Optimization Laboratory</title>
+<!-- Styles -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&amp;display=swap&amp;subset=latin-ext" rel="stylesheet"/>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/fontawesome-all.css" rel="stylesheet"/>
+<link href="css/swiper.css" rel="stylesheet"/>
+<link href="css/magnific-popup.css" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<!-- Favicon  -->
+<link href="images/favicon.png" rel="icon"/>
+<style>
+#projects .project-card-row { display:flex; flex-wrap:wrap; align-items:stretch; }
+#projects .project-card-row .card { display:flex; flex-direction:column; align-self:stretch; }
+#projects .project-card-row .card .card-body { flex:1 1 auto; }
+#projects .project-card-row .card .button-container { margin-top:auto; }
+</style>
+<style>
+/* AeroMDO collaboration counters: one aligned row on desktop, responsive on mobile */
+#counter { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:nowrap; }
+#counter .cell { display:flex; align-items:center; gap:12px; margin:0; min-width:0; }
+#counter .counter-value { flex:0 0 auto; margin:0; line-height:1; }
+#counter .counter-info { margin:0; line-height:1.45; white-space:nowrap; }
+@media (max-width: 767.98px) {
+  #counter { flex-wrap:wrap; justify-content:flex-start; gap:20px 28px; }
+  #counter .cell { flex:0 0 auto; }
+}
+</style>
+<style>
+/* About section — redesign */
+.about-x { background:#fff; padding:6rem 0; }
+.about-x .ax-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:4.5rem; align-items:center; }
+.about-x .ax-eyebrow { display:flex; align-items:center; gap:12px; margin-bottom:1.5rem; }
+.about-x .ax-eyebrow span:first-child { width:32px; height:2px; background:#14bf98; }
+.about-x .ax-eyebrow span:last-child { font:600 13px Montserrat,sans-serif; letter-spacing:.18em; color:#14bf98; }
+.about-x h2 { margin:0 0 1.5rem; font:700 2.5rem/1.18 Montserrat,sans-serif; color:#142b4d; text-align:left; text-wrap:balance; }
+.about-x .ax-text { margin:0 0 1.5rem; font-size:16px; line-height:1.75; color:#4a5566; text-align:left; text-wrap:pretty; }
+.about-x .ax-timeline { display:flex; align-items:center; gap:14px; font:700 15px Montserrat,sans-serif; color:#142b4d; }
+.about-x .ax-timeline .ax-line { flex:1; height:1px; background:#cfd7e0; }
+.about-x .ax-timeline .ax-dot { width:8px; height:8px; border-radius:50%; background:#14bf98; }
+.about-x .ax-timeline .ax-end { color:#14bf98; }
+.about-x .ax-media { position:relative; padding:0 0 28px 28px; }
+.about-x .ax-media::before { content:""; position:absolute; left:0; bottom:0; width:62%; height:70%; background:#142b4d; }
+.about-x .ax-media img { position:relative; display:block; width:100%; aspect-ratio:4/3; object-fit:cover; object-position:52% 48%; }
+.about-x .ax-interests { grid-column:1 / -1; }
+.about-x .ax-interests p { margin:0 0 1.1rem; font:600 15px/1.5 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+.about-x .ax-tags { display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:0; list-style:none; }
+.about-x .ax-tags li { display:inline-flex; align-items:center; gap:10px; font:500 13px/1.3 Montserrat,sans-serif; color:#142b4d; background:#f4f6f9; border-bottom:2px solid #14bf98; padding:10px 16px 10px 12px; white-space:nowrap; transition:background .2s,color .2s,transform .2s; }
+.about-x .ax-tags li::before { content:""; width:6px; height:6px; background:#14bf98; transform:rotate(45deg); flex:none; }
+.about-x .ax-tags li:hover { background:#142b4d; color:#fff; transform:translateY(-2px); }
+@media (max-width: 991.98px) {
+  .about-x { padding:4.5rem 0; }
+  .about-x .ax-grid { grid-template-columns:1fr; gap:2.75rem; }
+  .about-x h2 { font-size:2rem; }
+}
+@media (max-width: 575.98px) {
+  .about-x { padding:3.5rem 0; }
+  .about-x h2 { font-size:1.65rem; }
+  .about-x .ax-media { padding:0 0 16px 16px; }
+  .about-x .ax-tags li { white-space:normal; }
+}
+</style>
+
+
+
+
+
+
+
+<style>
+/* Team — redesign */
+#members { background:#f4f6f9; padding:5.5rem 0 5rem; }
+#members h2 { margin-bottom:.5rem; font:700 2.25rem/1.2 Montserrat,sans-serif; color:#142b4d; }
+#members .p-heading { margin:0 0 2.25rem; color:#4a5566; }
+#members .row .p-heading { margin:3.5rem 0 1.75rem; display:flex; align-items:center; justify-content:center; gap:14px; font:600 13px Montserrat,sans-serif; letter-spacing:.18em; text-transform:uppercase; color:#142b4d; }
+#members .p-heading, #members .row .p-heading { width:100% !important; max-width:none !important; margin-left:auto !important; margin-right:auto !important; text-align:center !important; justify-content:center !important; }
+#members .row .p-heading::before, #members .row .p-heading::after { content:""; width:40px; height:2px; background:#14bf98; }
+/* grids */
+#members h2, #members .p-heading { text-align:center; }
+#members .col-lg-12:has(> .team-member), #members .part-time-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; width:100%; margin:20px auto 0; padding:0; }
+#members .col-lg-12:has(> .team-member) > .row, #members .col-lg-12:has(> .team-member) > .part-time-grid { flex:0 0 100%; width:100%; margin-left:0; margin-right:0; }
+#members .col-lg-12:has(> .team-member) > .row > [class*="col-"] { text-align:center; }
+#members .col-lg-12:has(> .team-member) > .part-time-grid { max-width:1000px; margin:0 auto; }
+#members .part-time-grid { max-width:1000px; }
+#members .col-lg-12:has(> .team-member) > .team-member, #members .part-time-grid > .team-member { flex:0 0 230px; width:230px !important; }
+#members .part-time-grid > .team-member { transform:none !important; grid-column:auto !important; }
+/* card */
+#members .team-member { width:auto; max-width:none; margin:0; padding:0 0 1.25rem; display:flex; flex-direction:column; align-items:center; text-align:center; vertical-align:top; background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); overflow:hidden; transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+#members .team-member:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(20,43,77,.12); border-top-color:#142b4d; }
+#members .team-member { transition:transform .4s cubic-bezier(.22,.61,.36,1), box-shadow .4s, border-color .4s !important; }
+#members .team-member:hover .p-large { color:#0f9c7c; }
+#members .team-member .p-large { transition:color .3s; }
+#members .team-member { border-top:3px solid #14bf98; }
+#members .team-member .image-wrapper { position:relative; width:100%; height:220px; margin:0 0 1rem; padding:1.5rem 1.25rem 0; box-sizing:border-box; display:flex; align-items:center; justify-content:center; background:none; overflow:visible; }
+#members .team-member .image-wrapper img { width:auto; height:auto; max-width:100%; max-height:100%; object-fit:contain; margin:0; border-radius:0; transition:transform .5s cubic-bezier(.22,.61,.36,1); }
+#members .team-member .image-wrapper img[src$="logo.svg"] { max-width:50%; opacity:.5; }
+#members .team-member:hover .image-wrapper img { transform:scale(1.03); }
+#members .team-member .p-large { margin:0 1rem .2rem; font:700 1rem/1.35 Montserrat,sans-serif; color:#142b4d; min-height:0; }
+#members .team-member .job-title { margin:0 1rem .9rem; font:500 11px/1.5 Montserrat,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#6b7684; }
+/* social */
+#members .team-member .social-icons { display:flex; flex-wrap:wrap; justify-content:center; gap:6px; margin-top:auto; }
+#members .team-member .social-icons .fa-stack { width:32px; height:32px; line-height:32px; margin:0; font-size:13px; }
+#members .team-member .social-icons .hexagon { display:none; }
+#members .team-member .social-icons a { display:flex; align-items:center; justify-content:center; width:32px; height:32px; border:1px solid #cfd7e0; border-radius:50%; color:#142b4d; transition:background .2s, color .2s, border-color .2s, transform .2s; }
+#members .team-member .social-icons a .fa-stack-1x { position:static; width:auto; line-height:1; color:inherit; }
+#members .team-member .social-icons a:hover { background:#142b4d; border-color:#142b4d; color:#fff; transform:translateY(-2px); }
+/* principal investigator: featured horizontal card */
+#members .container > .team-member { display:grid; grid-template-columns:240px minmax(0,1fr); grid-template-rows:auto auto 1fr; column-gap:2rem; align-items:start; text-align:left; max-width:760px; margin:0 auto; padding:0; }
+#members .container > .team-member .image-wrapper { grid-row:1 / 4; margin:0; height:260px; padding:1.5rem; }
+#members .container > .team-member .p-large { margin:2.25rem 1.5rem .3rem 0; font-size:1.35rem; }
+#members .container > .team-member .job-title { margin:0 1.5rem 1.25rem 0; color:#14bf98; }
+#members .container > .team-member .social-icons { justify-content:flex-start; margin:0 1.5rem 1.5rem 0; align-self:start; }
+@media (max-width: 575.98px) {
+  #members { padding:3.5rem 0; }
+  #members h2 { font-size:1.75rem; }
+  #members .col-lg-12:has(> .team-member), #members .part-time-grid { gap:12px; }
+  #members .col-lg-12:has(> .team-member) > .team-member, #members .part-time-grid > .team-member { flex:0 0 calc(50% - 6px); width:calc(50% - 6px) !important; }
+  #members .team-member .image-wrapper { height:170px; padding:1rem .75rem 0; }
+  #members .team-member .p-large { font-size:.9rem; margin:0 .6rem .2rem; }
+  #members .team-member .job-title { font-size:10px; margin:0 .6rem .8rem; }
+  #members .container > .team-member { grid-template-columns:1fr; text-align:center; }
+  #members .container > .team-member .image-wrapper { grid-row:auto; height:220px; }
+  #members .container > .team-member .p-large { margin:1.1rem 1rem .2rem; }
+  #members .container > .team-member .job-title { margin:0 1rem 1rem; }
+  #members .container > .team-member .social-icons { justify-content:center; margin:0 1rem 1.25rem; }
+}
+</style>
+
+<style>
+/* Pillars (Developing Capabilities ...) — redesign */
+.cx-pillars { background:#f4f6f9; padding:5.5rem 0; }
+.cx-pillars .cx-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.cx-pillars .cx-card { position:relative; background:#fff; padding:2.5rem 2.25rem 2.25rem; display:flex; flex-direction:column; gap:1rem; border-bottom:2px solid transparent; box-shadow:0 1px 2px rgba(20,43,77,.06); transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s; overflow:hidden; }
+.cx-pillars .cx-card::before { content:""; position:absolute; left:0; top:0; height:3px; width:0; background:#14bf98; transition:width .45s cubic-bezier(.2,.7,.2,1); }
+.cx-pillars .cx-card:hover { transform:translateY(-6px); box-shadow:0 18px 40px rgba(20,43,77,.12); border-bottom-color:#142b4d; }
+.cx-pillars .cx-card:hover::before { width:100%; }
+.cx-pillars .cx-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:.5rem; }
+.cx-pillars .cx-icon { width:64px; height:64px; display:flex; align-items:center; justify-content:center; background:#142b4d; color:#fff; font-size:22px; transform:rotate(45deg) scale(.86); border-radius:6px; transition:transform .5s cubic-bezier(.2,.7,.2,1), background .35s; }
+.cx-pillars .cx-icon i { transform:rotate(-45deg); transition:transform .5s cubic-bezier(.2,.7,.2,1); }
+.cx-pillars .cx-card:hover .cx-icon { transform:rotate(0deg) scale(1); background:#14bf98; }
+.cx-pillars .cx-card:hover .cx-icon i { transform:rotate(0deg) scale(1.12); animation:cx-bob 1.4s ease-in-out .5s infinite; }
+.cx-pillars .cx-card:hover .fa-fighter-jet { animation:cx-fly 1.4s ease-in-out .5s infinite; }
+.cx-pillars .cx-num { font:700 14px Montserrat,sans-serif; letter-spacing:.12em; color:#b3bfcc; transition:color .35s; }
+.cx-pillars .cx-card:hover .cx-num { color:#14bf98; }
+.cx-pillars .cx-title { margin:0; font:700 1.25rem/1.3 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+.cx-pillars .cx-text { margin:0; font-size:15px; line-height:1.7; color:#4a5566; text-align:left; }
+@keyframes cx-bob { 0%,100% { transform:translateY(0) scale(1.12); } 50% { transform:translateY(-4px) scale(1.12); } }
+@keyframes cx-fly { 0%,100% { transform:translateX(0) scale(1.12); } 50% { transform:translateX(5px) translateY(-3px) scale(1.12); } }
+@media (prefers-reduced-motion: reduce) { .cx-pillars .cx-card, .cx-pillars .cx-icon, .cx-pillars .cx-icon i { transition:none; animation:none !important; } }
+@media (max-width: 991.98px) { .cx-pillars .cx-grid { grid-template-columns:1fr; max-width:620px; margin:0 auto; } }
+@media (max-width: 575.98px) { .cx-pillars { padding:3.5rem 0; } .cx-pillars .cx-card { padding:2rem 1.5rem; } }
+</style>
+<style>
+/* Events & Posts — redesign (flexible image frames) */
+.ex-events { background:#fff; padding:5.5rem 0 5rem; }
+.ex-events h2 { margin-bottom:.5rem; font:700 2.25rem/1.2 Montserrat,sans-serif; color:#142b4d; }
+.ex-events .p-heading { margin-bottom:2.75rem; color:#4a5566; }
+.ex-events .slider-container { position:relative; padding:0 56px; }
+.ex-events .swiper-container { padding:8px 4px 36px; }
+.ex-events .swiper-slide { height:auto; }
+.ex-events .recent-posts, .ex-events .recent-posts > [class*="col-"] { height:100%; margin:0; padding:0; }
+.ex-events .card { height:100%; margin:0; border:0; border-radius:0; background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); overflow:hidden; display:flex; flex-direction:column; transition:transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+.ex-events .card:hover { transform:translateY(-6px); box-shadow:0 18px 40px rgba(20,43,77,.14); }
+/* Every image sits in the same 4:3 frame: shown whole (contain) over a blurred copy of itself */
+.ex-events .ex-media { position:relative; aspect-ratio:4/3; overflow:hidden; background:#142b4d; flex:none; }
+.ex-events .ex-media::before { content:""; position:absolute; inset:-24px; background:var(--ex-bg) center / cover no-repeat; filter:blur(18px) saturate(1.1); opacity:.75; transform:scale(1.1); }
+.ex-events .ex-media img { position:relative; display:block; width:100%; height:100%; object-fit:contain; margin:0; border-radius:0; transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+.ex-events .card:hover .ex-media img { transform:scale(1.04); }
+.ex-events .card-body { flex:1; display:flex; flex-direction:column; gap:.75rem; padding:1.5rem 1.5rem 1.75rem; border-top:3px solid #14bf98; font:500 12px/1.5 Montserrat,sans-serif; letter-spacing:.06em; text-transform:uppercase; color:#6b7684; text-align:left; }
+.ex-events .card-title { order:-1; margin:0; font:700 1.05rem/1.4 Montserrat,sans-serif; letter-spacing:0; text-transform:none; text-align:left; }
+.ex-events .card-title a { color:#142b4d; text-decoration:none; background:linear-gradient(#14bf98,#14bf98) 0 100% / 0 2px no-repeat; transition:background-size .35s, color .2s; }
+.ex-events .card:hover .card-title a { background-size:100% 2px; }
+.ex-events .card-title a:hover { color:#0f9c7c; }
+.ex-events .swiper-button-next, .ex-events .swiper-button-prev { width:44px; height:44px; margin-top:-40px; border-radius:50%; background:#142b4d none; color:#fff; display:flex; align-items:center; justify-content:center; transition:background .2s; }
+.ex-events .swiper-button-next:hover, .ex-events .swiper-button-prev:hover { background:#14bf98; }
+.ex-events .swiper-button-next::after, .ex-events .swiper-button-prev::after { content:""; width:10px; height:10px; border-top:2px solid #fff; border-right:2px solid #fff; }
+.ex-events .swiper-button-next { right:0; } .ex-events .swiper-button-next::after { transform:translateX(-2px) rotate(45deg); }
+.ex-events .swiper-button-prev { left:0; } .ex-events .swiper-button-prev::after { transform:translateX(2px) rotate(-135deg); }
+@media (max-width: 767.98px) {
+  .ex-events { padding:3.5rem 0; }
+  .ex-events h2 { font-size:1.75rem; }
+  .ex-events .slider-container { padding:0 0 56px; }
+  .ex-events .swiper-button-next, .ex-events .swiper-button-prev { top:auto; bottom:0; margin-top:0; }
+  .ex-events .swiper-button-prev { left:calc(50% - 52px); } .ex-events .swiper-button-next { right:calc(50% - 52px); }
+}
+</style>
+<style>
+/* Projects — redesign */
+#projects { background:#f4f6f9; padding:5.5rem 0 5rem; }
+#projects h2 { margin-bottom:2rem; font:700 2.25rem/1.2 Montserrat,sans-serif; color:#142b4d; }
+#projects .row + .row h2 { margin-top:3.5rem; }
+#projects .project-card-row { display:grid !important; grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr)); gap:24px; }
+#projects .project-card-row .card { width:auto !important; max-width:none !important; margin:0 !important; display:flex; flex-direction:column; background:#fff; border:0; border-radius:0; border-top:3px solid #14bf98; box-shadow:0 1px 3px rgba(20,43,77,.08); overflow:hidden; text-align:left; transition:transform .4s cubic-bezier(.22,.61,.36,1), box-shadow .4s, border-color .4s; }
+#projects .project-card-row .card:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(20,43,77,.12); border-top-color:#142b4d; }
+#projects .card .card-image { position:relative; margin:0; aspect-ratio:16/9; overflow:hidden; background:#142b4d; }
+#projects .card .card-image img { width:100%; height:100%; object-fit:cover; margin:0; border-radius:0; transition:transform .6s cubic-bezier(.22,.61,.36,1); }
+#projects .card:hover .card-image img { transform:scale(1.04); }
+#projects .card .pj-status { position:absolute; left:16px; top:16px; padding:6px 12px; background:#fff; font:700 10px Montserrat,sans-serif; letter-spacing:.14em; color:#142b4d; display:inline-flex; align-items:center; gap:8px; }
+#projects .card .pj-status::before { content:""; width:7px; height:7px; border-radius:50%; background:#8a95a3; }
+#projects .card .pj-status.is-live::before { background:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.2); }
+#projects .card .card-body { flex:1 1 auto; display:flex; flex-direction:column; gap:.75rem; padding:1.5rem 1.5rem .5rem; text-align:left; }
+#projects .card .card-body > p:not(.price) { order:-1; margin:0; font:500 11px/1.5 Montserrat,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#0f8a6e; text-align:left; }
+#projects .card .card-title { margin:0; font:700 1.02rem/1.45 Montserrat,sans-serif; color:#142b4d; text-align:left; transition:color .3s; }
+#projects .card:hover .card-title { color:#0f8a6e; }
+#projects .card .card-body ul { margin:0; }
+#projects .card .card-body li { margin:0; font-size:14px; color:#4a5566; }
+#projects .card .card-body li .fa-square { display:none; }
+#projects .card .card-body li strong { font:500 11px Montserrat,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#8a95a3; margin-right:4px; }
+#projects .card .price { margin:auto 0 0; padding-top:.9rem; border-top:1px solid #eef1f4; display:flex; align-items:center; gap:8px; font:500 13px Montserrat,sans-serif; color:#142b4d; text-align:left; }
+#projects .card .price::before { content:"\f073"; font-family:"Font Awesome 5 Free"; font-weight:400; color:#14bf98; }
+#projects .card .button-container { margin:0 !important; padding:1rem 1.5rem 1.5rem; text-align:left; }
+#projects .card .button-container .btn-solid-reg { display:inline-flex; align-items:center; gap:10px; padding:11px 24px; border:2px solid #142b4d; border-radius:32px; background:transparent; color:#142b4d; font:700 12px Montserrat,sans-serif; letter-spacing:.12em; transition:background .2s,color .2s; }
+#projects .card .button-container .btn-solid-reg::after { content:"→"; transition:transform .2s; }
+#projects .card .button-container .btn-solid-reg:hover { background:#142b4d; color:#fff; }
+#projects .card .button-container .btn-solid-reg:hover::after { transform:translateX(3px); }
+/* Publications (home) — redesign */
+.lightbox-basic .pb-abstract { margin:.25rem 0 1.25rem; padding-top:1rem; border-top:1px solid #e3e8ee; font-size:14px; line-height:1.7; color:#4a5566; text-align:left; }
+#publications { background:#fff; padding:5.5rem 0 5rem; }
+#publications h2 { margin-bottom:1.75rem; font:700 2.25rem/1.2 Montserrat,sans-serif; color:#142b4d; }
+#publications .button-group { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; margin-bottom:2rem; }
+#publications .button-group a { margin:0 !important; padding:8px 16px; border:1px solid #cfd7e0 !important; border-radius:40px; background:#fff !important; color:#142b4d !important; font:500 12px Montserrat,sans-serif; letter-spacing:.06em; cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
+#publications .button-group a:hover { border-color:#142b4d !important; }
+#publications .button-group a.is-checked { background:#142b4d !important; border-color:#142b4d !important; color:#fff !important; }
+#publications .button-group a span { color:inherit !important; }
+#publications .grid { margin:0 -10px; }
+#publications .element-item { width:calc(25% - 20px) !important; height:auto !important; margin:10px !important; background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); border-top:3px solid #14bf98; overflow:hidden; transition:box-shadow .4s, border-color .4s; }
+#publications .element-item:hover { box-shadow:0 14px 32px rgba(20,43,77,.12); border-top-color:#142b4d; }
+#publications .element-item a { display:flex; flex-direction:column; color:inherit; text-decoration:none; }
+#publications .element-item img { order:0; width:100%; aspect-ratio:1/1; height:auto; object-fit:contain; background:#f4f6f9; margin:0; transition:transform .6s cubic-bezier(.22,.61,.36,1); }
+#publications .element-item:hover img { transform:scale(1.04); }
+#publications .element-item .element-item-overlay { order:1; position:relative !important; inset:auto !important; opacity:1 !important; visibility:visible !important; background:#fff !important; height:auto !important; display:flex; flex-direction:column; gap:.5rem; padding:.9rem 1rem 1rem; text-align:left; z-index:1; }
+#publications .element-item .element-item-overlay > span:first-child { position:static !important; transform:none !important; top:auto !important; width:auto !important; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; min-height:0; font:700 13px/1.45 Montserrat,sans-serif; color:#142b4d !important; text-align:left; transition:color .3s; }
+#publications .element-item:hover .element-item-overlay > span:first-child { color:#0f8a6e !important; }
+#publications .pb-tags { display:flex; flex-wrap:wrap; gap:6px; }
+#publications .pb-tags i { font:500 10px Montserrat,sans-serif; font-style:normal; letter-spacing:.1em; color:#142b4d; background:#eef3f8; padding:4px 9px; }
+#publications .pb-more { font:700 11px Montserrat,sans-serif; letter-spacing:.12em; color:#142b4d; display:inline-flex; align-items:center; gap:8px; }
+#publications .pb-more::after { content:"→"; transition:transform .2s; }
+#publications .element-item:hover .pb-more::after { transform:translateX(3px); }
+@media (max-width: 1199.98px) { #publications .element-item { width:calc(33.333% - 20px) !important; } }
+@media (max-width: 767.98px) { #publications .element-item { width:calc(50% - 20px) !important; } }
+@media (max-width: 575.98px) {
+  #projects, #publications { padding:3.5rem 0; }
+  #projects h2, #publications h2 { font-size:1.75rem; }
+  #publications .grid { margin:0 -6px; }
+  #publications .element-item { width:calc(50% - 12px) !important; margin:6px !important; }
+  #publications .element-item .element-item-overlay > span:first-child { font-size:12px; }
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+<!-- Preloader -->
+<div class="spinner-wrapper">
+<div class="spinner">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+</div>
+<!-- end of preloader -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+<!-- Text Logo - Use this if you don't have a graphic logo -->
+<!--   <a class="navbar-brand logo-text page-scroll" href="index.html">AeroMDO Lab</a> -->
+<!-- Image Logo -->
+<a class="navbar-brand logo-image" href="index.html"><img alt="alternative" src="images/logo.svg"/></a>
+<!-- Mobile Menu Toggle Button -->
+<button aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarsExampleDefault" data-toggle="collapse" type="button">
+<span class="navbar-toggler-awesome fas fa-bars"></span>
+<span class="navbar-toggler-awesome fas fa-times"></span>
+</button>
+<!-- end of mobile menu toggle button -->
+<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link page-scroll" href="#about">ABOUT</a>
+</li>
+<li class="nav-item">
+<a class="nav-link page-scroll" href="#projects">PROJECTS</a>
+</li>
+<!-- Dropdown Menu -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle page-scroll" href="#publications" id="navbarDropdown" role="button">PUBLICATIONS</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+<a class="dropdown-item" href="publications.html" rel="noreferrer noopener" target="_blank"><span class="item-text">ALL PUBLICATIONS</span></a>
+</div>
+</li>
+<!-- end of dropdown menu -->
+<!-- Dropdown Menu -->
+<li class="nav-item dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle page-scroll" href="#members" id="navbarDropdown" role="button">PEOPLE</a>
+<div aria-labelledby="navbarDropdown" class="dropdown-menu">
+<a class="dropdown-item" href="alumni.html" rel="noreferrer noopener" target="_blank"><span class="item-text">ALUMNI</span></a>
+</div>
+</li>
+<!-- end of dropdown menu -->
+<li class="nav-item">
+<a class="nav-link page-scroll" href="#partners">PARTNERS</a>
+</li>
+<li class="nav-item">
+<a class="nav-link page-scroll" href="#contact">CONTACT</a>
+</li>
+</ul>
+<span class="nav-item social-icons">
+<span class="fa-stack">
+<a href="https://linkedin.com/company/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://instagram.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-instagram fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://twitter.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-twitter fa-stack-1x"></i>
+</a>
+</span>
+</span>
+</div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
+<!-- Header -->
+<header class="header" id="header">
+<div class="header-content">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="text-container">
+<!--   <h1>MOBILE APP <br>FOR <span id="js-rotating"> DESIGNERS, MARKETERS, DEVELOPERS</span></h1> -->
+<h1><span id="js-rotating">AEROELASTIC, STOCHASTIC, MULTIDISCIPLINARY DESIGN</span> <br/> OPTIMIZATION </h1>
+<p class="p-heading p-large">AeroMDO Lab's purpose is to develop leading-edge aerospace &amp; defense technology and to move these out of the lab into the real world.</p>
+<a class="btn-solid-lg page-scroll" href="#about">DISCOVER</a>
+</div>
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of header-content -->
+</header> <!-- end of header -->
+<!-- end of header -->
+<!-- About -->
+<div class="about-x" id="about">
+<div class="container">
+<div class="ax-grid">
+<div class="ax-copy">
+<div class="ax-eyebrow"><span></span><span>ABOUT</span></div>
+<h2>Aerospace Multidisciplinary Design Optimization Lab</h2>
+<p class="ax-text">The establishment of AeroMDO Lab actually dates back to the founding of the Multidisciplinary Optimization Group by Prof. Nikbay in 2006. AeroMDO Lab officially opened in the Faculty of Aeronautics and Astronautics in 2019.</p>
+<div class="ax-timeline"><span>2006</span><span class="ax-line"></span><span class="ax-dot"></span><span class="ax-line"></span><span class="ax-end">2019</span></div>
+</div>
+<div class="ax-media"><img src="images/about-lab.jpg" alt="AeroMDO Lab research presentation"/></div>
+<div class="ax-interests">
+<p>Our current research interests mainly focus on a number of disciplines and techniques:</p>
+<ul class="ax-tags">
+<li>Aerodynamics</li>
+<li>Aerospace Structures</li>
+<li>Multidisciplinary Design Optimization</li>
+<li>Aeroelastic Optimization</li>
+<li>Aeroelasticity</li>
+<li>Fluid-Structure Interaction</li>
+<li>Sonic Boom Minimization</li>
+<li>Uncertainty Quantification</li>
+<li>Reliability-Based Design Optimization</li>
+<li>Reduced Order Modeling</li>
+<li>Multi-Fidelity Modeling</li>
+<li>Scientific Machine Learning</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- end of About -->
+<!-- Description -->
+<div class="cx-pillars">
+<div class="container">
+<div class="cx-grid">
+<div class="cx-card">
+<div class="cx-top"><span class="cx-icon"><i class="fas fa-database"></i></span><span class="cx-num">01</span></div>
+<h4 class="cx-title">Developing Capabilities</h4>
+<p class="cx-text">AeroMDO Team aims to train highly qualified researchers ambitious for the core values such as being a pioneer and society-oriented. We work hard to convert scientific knowledge into the leading aerospace &amp; defense technology with academic, industrial, national, and international collaborations.</p>
+</div>
+<div class="cx-card">
+<div class="cx-top"><span class="cx-icon"><i class="fas fa-fighter-jet"></i></span><span class="cx-num">02</span></div>
+<h4 class="cx-title">Developing Tools and Methods</h4>
+<p class="cx-text">By focusing on needs-based advanced knowledge, we develop and integrate cutting-edge tools in the field of computational aerodynamics, structural mechanics and acoustics, with the aid of multidisciplinary optimization techniques for robust design solutions.</p>
+</div>
+<div class="cx-card">
+<div class="cx-top"><span class="cx-icon"><i class="fas fa-users"></i></span><span class="cx-num">03</span></div>
+<h4 class="cx-title">Dissemination</h4>
+<p class="cx-text">We thrive as we spread our research outcomes and accomplishments originating from our university lab to the world, collaborate with industry &amp; public sectors and international institutions, and publish in prestigious journals and proceedings.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- end of description -->
+<!-- Projects -->
+<div class="cards-2" id="projects"><div class="container">
+<div class="row"><div class="col-lg-12"><div class="section-title">PROJECTS</div><h2>Current Projects</h2></div></div>
+<div class="row"><div class="col-lg-12 project-card-row"><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Deep Learning-Based Pressure Distribution Prediction in Unsteady Transonic Flows for Aeroelastic and Aeroacoustic Applications</h6><p>Turkish Aerospace Industries Funding Program</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Sep 2026 - Present</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/tusas-unsteady-transonic-pressure-dl.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Further Extensions and Verification of the Machine Learning and Robust Decision-Making Algorithms in APOW</h6><p>GE Global Services GmbH UK Branch</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Sep 2025 - Sep 2026 (On-going)</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/ge-ml-rbdm-2526.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div></div></div>
+<div class="row"><div class="col-lg-12"><h2>Recently Completed Projects</h2></div></div>
+<div class="row"><div class="col-lg-12 project-card-row"><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Development of Environmentally Friendly Aircraft with High Aspect Ratio Wings via Multi-Fidelity Surrogate Modeling Based Aeroelastic Optimization</h6><p>TUBITAK 1001 Scientific and Technological Research Projects Funding Program</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Apr 2023 - Apr 2026</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/itu-tubitak-mf-aeroelastic.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Modeling Unsteady Flow Characteristics of Supersonic Cavity Flow via Deep Learning</h6><p>Turkish Aerospace Industries Funding Program</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Dec 2023 - Dec 2025</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/tusas-supersonic-cavity-deep-learning.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Implementation of High Dimensional Bayesian Optimization and Machine Learning Hyperparameter Optimization Capabilities to Automated Process and Optimization Workbench</h6><p>GE Global Services GmbH UK Branch</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Sep 2024 - Sep 2025</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/ge-hbohpo-2425.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Generation of Generalized Aerodynamic Forces Through CFD-Based Methods for Flutter Prediction</h6><p>Turkish Aerospace Industries Funding Program</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Sep 2024 - May 2025</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/tusas-cfd-flutter-gaf.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div><div class="card">
+<div class="card-image"><img alt="AeroMDO project" class="img-fluid" src="images/index-projects/projects-1.jpg"/></div>
+<div class="card-body"><h6 class="card-title">Development of Multifidelity Deep Neural Network for Aeroelastic Predictions of a High Aspect Ratio Wing</h6><p>ITU-BAP Scientific Research Program</p>
+<ul class="list-unstyled li-space-lg"><li class="media"><i class="fas fa-square"></i><div class="media-body"><strong>Director: </strong>Melike Nikbay</div></li></ul>
+<p class="price">Dec 2022 - Dec 2024</p></div>
+<div class="button-container"><a class="btn-solid-reg page-scroll" href="projects/itu-bap-mf-aeromdo.html" rel="noreferrer noopener" target="_blank">DETAILS</a></div></div></div></div>
+</div></div>
+<!-- end of projects -->
+<!-- Details 1 -->
+<div class="accordion" id="details">
+<div class="area-1">
+</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+<!-- Accordion -->
+<div class="accordion-container" id="accordionOne">
+<h2>Research Areas</h2>
+<div class="item">
+<div id="headingOne">
+<span aria-controls="collapseOne" aria-expanded="true" data-target="#collapseOne" data-toggle="collapse" role="button">
+<span class="circle-numbering">1</span><span class="accordion-title">Multidisciplinary Design Optimization</span>
+</span>
+</div>
+<div aria-labelledby="headingOne" class="collapse show" data-parent="#accordionOne" id="collapseOne">
+<div align="justify" class="accordion-body">
+                            Multidisciplinary Design Optimization (MDO) is a field that exploits optimization techniques and a number of disciplines, which aim to solve design problems optimally. 
+                            MDO allows all relevant disciplines to be incorporated simultaneously. The simultaneous problem approach provides better solutions than optimizing each discipline sequentially. 
+                            However, it is obvious that including all disciplines simultaneously will significantly boost the complexity of the problem.
+                        </div>
+</div>
+</div> <!-- end of item -->
+<div class="item">
+<div id="headingTwo">
+<span aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-target="#collapseTwo" data-toggle="collapse" role="button">
+<span class="circle-numbering">2</span><span class="accordion-title">Aeroelasticity</span>
+</span>
+</div>
+<div aria-labelledby="headingTwo" class="collapse" data-parent="#accordionOne" id="collapseTwo">
+<div align="justify" class="accordion-body">
+                            Aeroelasticity is the term that denotes the field of study concerned with the interaction between the deformation of an elastic
+                            structure in an airstream and the resulting aerodynamic force. The study of aeroelasticity generally deals with two fields: static
+                            aeroelasticity associated with the steady-state response of an elastic body to a fluid flow, and the body's dynamic (typically
+                            vibrational) response called dynamic aeroelasticity.
+                        </div>
+</div>
+</div> <!-- end of item -->
+<div class="item">
+<div id="headingThree">
+<span aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-target="#collapseThree" data-toggle="collapse" role="button">
+<span class="circle-numbering">3</span><span class="accordion-title">Sonic Boom Minimization</span>
+</span>
+</div>
+<div aria-labelledby="headingThree" class="collapse" data-parent="#accordionOne" id="collapseThree">
+<div align="justify" class="accordion-body">
+                            One of the current requirements from civil aeronautical transportation is the development of supersonic transport that is both feasible in
+                            economic terms and also acceptable from an environmental standpoint. A sonic boom is the pressure disturbance felt on the ground, caused by the
+                            shock waves propagating from the aircraft through the atmosphere. Accordingly, sonic boom signature prediction is a primary criterion for low-boom
+                            commercial supersonic aircraft design.
+                        </div>
+</div>
+</div> <!-- end of item -->
+</div> <!-- end of accordion-container -->
+<!-- end of accordion -->
+</div> <!-- end of area-2 -->
+</div> <!-- end of accordion -->
+<!-- end of details 1 -->
+<!-- Details 2 -->
+<div class="tabs">
+<div class="area-1">
+<div class="tabs-container">
+<!-- Tabs Links -->
+<ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+<li class="nav-item">
+<a aria-controls="tab-1" aria-selected="true" class="nav-link active" data-toggle="tab" href="#tab-1" id="nav-tab-1" role="tab"><i class="fas fa-th"></i> UQ</a>
+</li>
+<li class="nav-item">
+<a aria-controls="tab-2" aria-selected="false" class="nav-link" data-toggle="tab" href="#tab-2" id="nav-tab-2" role="tab"><i class="fas fa-th"></i> ROM</a>
+</li>
+<li class="nav-item">
+<a aria-controls="tab-3" aria-selected="false" class="nav-link" data-toggle="tab" href="#tab-3" id="nav-tab-3" role="tab"><i class="fas fa-th"></i> MF</a>
+</li>
+<li class="nav-item">
+<a aria-controls="tab-4" aria-selected="false" class="nav-link" data-toggle="tab" href="#tab-4" id="nav-tab-4" role="tab"><i class="fas fa-th"></i> ML</a>
+</li>
+</ul>
+<!-- end of tabs links -->
+<!-- Tabs Content -->
+<div class="tab-content" id="ariaTabsContent">
+<!-- Tab -->
+<div aria-labelledby="tab-1" class="tab-pane fade show active" id="tab-1" role="tabpanel">
+<h4>Uncertainty Quantification</h4>
+<p align="justify">Reliability and robustness requirements of aerospace engineering systems are of major importance and need to be assessed accurately and efficiently during the early phases of the design process to ameliorate the certification tasks mandatory for the final design. Numerical assessment of the <strong>reliability and robustness of a system is possible with uncertainty quantification (UQ) methods </strong> that input the effect of uncertain variables to propagate them to the overall system performance.</p>
+</div> <!-- end of tab-pane -->
+<!-- end of tab -->
+<!-- Tab -->
+<div aria-labelledby="tab-2" class="tab-pane fade" id="tab-2" role="tabpanel">
+<h4>Reduced Order Modeling</h4>
+<li align="justify">
+							Reduced order modeling (ROM) is a technique that is usually thought of as an inexpensive mathematical representation that <strong>reduces the computational complexity</strong> in numerical simulations while offering the potential for near real-time analysis.
+						</li>
+<li align="justify">
+							Since reducing the space dimension or degrees of freedom for the mathematical models of real-life processes, ROMs can <strong>deal with challenges due to the complexity and large dimension</strong> when used in numerical simulations.
+						</li>
+<li align="justify">
+							ROMs become <strong>more and more popular</strong> in the aerospace industry to meet market demands that are related to shorter design cycles that produce higher quality products.
+						</li>
+</div> <!-- end of tab-pane -->
+<!-- end of tab -->
+<!-- Tab -->
+<div aria-labelledby="tab-3" class="tab-pane fade" id="tab-3" role="tabpanel">
+<h4>Multifidelity Analysis</h4>
+<p align="justify">Multifidelity approaches to design and analysis for complex systems include both low- and high-fidelity data so as to <strong>maximize the accuracy</strong> of model estimations while <strong>minimizing the cost</strong> computationally.</p>
+<p align="justify">The application areas of these methods can be listed as wing-design optimization, robotic learning, even recently being extended to human-in-the-loop simulation.</p>
+<ul class="list-unstyled li-space-lg">
+<li class="media">
+<i class="fas fa-square"></i>
+<div align="justify" class="media-body">Low-fidelity data can be sometimes utilized when no having an adequate amount of high-fidelity data available to train the model. Using low-fidelity data provides inexpensive solutions to build up the model, so it is possible to make use of larger amounts of data.
+								However, the limitation of the low-fidelity approach compared to high-fidelity is that it may not be used for predicting real-time analysis.</div>
+</li>
+<li class="media">
+<i class="fas fa-square"></i>
+<div class="media-body">An obvious limitation of utilizing high-fidelity data is that the data are expensive computationally, which may limit the amount of data that can be used.</div>
+</li>
+</ul>
+</div> <!-- end of tab-pane -->
+<!-- end of tab -->
+<!-- Tab -->
+<div aria-labelledby="tab-4" class="tab-pane fade" id="tab-4" role="tabpanel">
+<h4>Machine Learning (Deep Learning)</h4>
+<p align="justify">Deep learning is an important <strong>subfield of machine learning</strong> and artificial intelligence (AI) that imitates the way humans gain certain types of knowledge
+							and is inspired by the function of the brain called artificial neural networks.</p>
+<li align="justify">
+								Learning can be unsupervised, supervised or semi-supervised.
+							</li>
+</div> <!-- end of tab-pane -->
+<!-- end of tab -->
+</div> <!-- end of tab-content -->
+<!-- end of tabs content -->
+</div> <!-- end of tabs-container -->
+</div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+</div> <!-- end of tabs -->
+<!-- end of details 2 -->
+<!-- Publications --><div class="filter" id="publications"><div class="container"><div class="row"><div class="col-lg-12"><div class="section-title">PUBLICATIONS</div><h2>Publications</h2></div></div><div class="row"><div class="col-lg-12"><div class="button-group filters-button-group"><a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a><a class="button" data-filter=".aeroelasticity"><span>AEROELASTICITY</span></a><a class="button" data-filter=".aerodynamic"><span>AERODYNAMIC</span></a><a class="button" data-filter=".sonicboom"><span>SONIC BOOM MINIMIZATION</span></a><a class="button" data-filter=".supersonic"><span>SUPERSONIC</span></a><a class="button" data-filter=".optimization"><span>OPTIMIZATION</span></a><a class="button" data-filter=".uq"><span>UQ</span></a><a class="button" data-filter=".ai"><span>AI</span></a></div><div class="grid"><div class="element-item ai uq optimization"><a class="popup-with-move-anim" href="#publication-new-1"><div class="element-item-overlay"><span>Two-Step Multi-Fidelity Support Vector Regression in Aerospace Surrogate Modeling</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item aerodynamic optimization"><a class="popup-with-move-anim" href="#publication-new-2"><div class="element-item-overlay"><span>Multidisciplinary Design Optimization of a Non-Planar Flying Wing UCAV Concept</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item optimization ai"><a class="popup-with-move-anim" href="#publication-new-3"><div class="element-item-overlay"><span>Analytical Benchmark Problems for Multifidelity Optimization Methods</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item aerodynamic optimization ai"><a class="popup-with-move-anim" href="#publication-new-4"><div class="element-item-overlay"><span>Aeroacoustic Optimization of Unsteady Transonic Cavity Flow using a Bayesian Approach</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item ai optimization"><a class="popup-with-move-anim" href="#publication-new-5"><div class="element-item-overlay"><span>Sparse Design Field Construction Using PINNs</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item ai uq"><a class="popup-with-move-anim" href="#publication-new-6"><div class="element-item-overlay"><span>Development of a Mixture-of-Experts Framework using Multi-Fidelity Residual Learning for High-Dimensional Aerospace Applications</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item ai uq supersonic"><a class="popup-with-move-anim" href="#publication-new-7"><div class="element-item-overlay"><span>Multi-Fidelity Modeling for Uncertainty Quantification of a Supersonic Aircraft Design</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div><div class="element-item aerodynamic optimization ai"><a class="popup-with-move-anim" href="#publication-new-8"><div class="element-item-overlay"><span>A Comparison of Standard and Extended Bayesian Optimisation for Benchmark CFD Applications</span></div><img alt="publication placeholder" src="images/index-publications/publication-10.png"/></a></div></div></div></div></div></div><!-- end of publications -->
+<!-- Publication Lightboxes -->
+<div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-1"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Two-Step Multi-Fidelity Support Vector Regression in Aerospace Surrogate Modeling</h3><hr class="line-heading"/><h6>D. Kilic and M. Nikbay</h6><p><strong>AIAA Journal of Aerospace Information Systems</strong><br/>2026</p><p class="pb-abstract">Compares machine-learning-based multifidelity methods on aerospace problems: sonic boom prediction with the JAXA Wing–Body model and aeroelastic datasets from the undeflected Common Research Model-13.5 wing. A novel two-step multifidelity support vector regression is proposed as an alternative to neural-network-based multifidelity models and compared with existing multifidelity deep neural networks.</p><a class="btn-solid-reg" href="https://doi.org/10.2514/1.I011754" rel="noreferrer noopener" target="_blank">DOI</a> <a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-2"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Multidisciplinary Design Optimization of a Non-Planar Flying Wing UCAV Concept</h3><hr class="line-heading"/><h6>M. Nikbay, S. Yildiz, B. Pirlepeli, and K. Kontis</h6><p><strong>Aerospace Science and Technology, Vol. 177, Part A, 112285</strong><br/>2026</p><p class="pb-abstract">Multidisciplinary design optimization of a novel non-planar UCAV developed from a flying-wing baseline, maximizing aerodynamic efficiency at Mach 0.8 and 11,000 m under lift, drag, airfoil thickness and radar cross-section constraints. A constrained efficient global optimization with KPLS-enhanced Kriging explores a 20-dimensional design space, reaching 44.55% higher aerodynamic efficiency than the baseline.</p><a class="btn-solid-reg" href="https://doi.org/10.1016/j.ast.2026.112285" rel="noreferrer noopener" target="_blank">DOI</a> <a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-3"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Analytical Benchmark Problems for Multifidelity Optimization Methods</h3><hr class="line-heading"/><h6>L. Mainini et al.</h6><p><strong>Archives of Computational Methods in Engineering, Vol. 33, pp. 2969-3000</strong><br/>2026</p><p class="pb-abstract">Introduces a benchmarking framework for multifidelity optimization: a suite of analytical benchmark problems capturing high dimensionality, multimodality, discontinuities and noise; metrics for optimization effectiveness and global approximation accuracy; and a comparison of several families of multifidelity methods. The benchmark suite is publicly available for Matlab, Fortran and Python.</p><a class="btn-solid-reg" href="https://doi.org/10.1007/s11831-025-10392-8" rel="noreferrer noopener" target="_blank">DOI</a> <a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-4"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Aeroacoustic Optimization of Unsteady Transonic Cavity Flow using a Bayesian Approach</h3><hr class="line-heading"/><h6>R. Kaba, S. Yildiz, B. Zafer, and M. Nikbay</h6><p><strong>CEAS Aeronautical Journal, Vol. 17, pp. 567-593</strong><br/>2026</p><p class="pb-abstract">Optimizes the geometry of a generic M219 weapon-bay cavity for aerodynamic and aeroacoustic criteria using constrained Bayesian optimization. Low-fidelity Spalart–Allmaras simulations on a coarse mesh drive the optimization, while IDDES on a fine mesh validates the optimized geometries using the OpenFOAM HISA solver. The process achieved about a 5% (7–10 dB) reduction in OASPL and SPL values.</p><a class="btn-solid-reg" href="https://doi.org/10.1007/s13272-025-00866-7" rel="noreferrer noopener" target="_blank">DOI</a> <a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-5"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Sparse Design Field Construction Using PINNs</h3><hr class="line-heading"/><h6>M. Senguler and M. Nikbay</h6><p><strong>WCCM 2026 / ECCOMAS 2026, Munich, Germany</strong><br/>2026</p><p class="pb-abstract">Proposes combining Physics-Informed Neural Networks (PINNs) with classical data-driven neural networks to build surrogate models for design fields with sparse data. Applied to a nine-parameter turbine cascade stator blade design space, only 10% of the samples are used for data informing and 70% for physics informing, with PirateNet as the architecture and SOAP as the optimizer.</p><a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-6"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Development of a Mixture-of-Experts Framework using Multi-Fidelity Residual Learning for High-Dimensional Aerospace Applications</h3><hr class="line-heading"/><h6>D. Kilic and M. Nikbay</h6><p><strong>WCCM 2026 / ECCOMAS 2026, Munich, Germany</strong><br/>2026</p><p class="pb-abstract">Presents a mixture-of-experts multifidelity framework that decomposes the high-fidelity response into a low-fidelity base model and a residual field approximated by local Gaussian process experts. It achieves near-linear training scaling with accuracy comparable to Co-Kriging, validated on 2D–15D benchmarks, a high-aspect-ratio wing and a 29-dimensional sonic boom prediction problem.</p><a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-7"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>Multi-Fidelity Modeling for Uncertainty Quantification of a Supersonic Aircraft Design</h3><hr class="line-heading"/><h6>E. C. Batur, D. Kilic and M. Nikbay</h6><p><strong>WCCM 2026 / ECCOMAS 2026, Munich, Germany</strong><br/>2026</p><p class="pb-abstract">Develops a multifidelity stochastic framework to assess the robustness of a 40-passenger low-boom supersonic airliner under operational and atmospheric uncertainties. SU2 and PANAIR provide high- and low-fidelity solutions and ITUBOOM computes ground boom loudness; the two-step MFSVR method is compared with Co-Kriging, and Sobol’ indices quantify each parameter’s contribution.</p><a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div><div class="lightbox-basic zoom-anim-dialog mfp-hide" id="publication-new-8"><div class="row"><button class="mfp-close x-button" title="Close (Esc)" type="button">×</button><div class="col-lg-6"><img alt="publication placeholder" class="img-fluid" src="images/index-publications/publication-10.png"/></div><div class="col-lg-6"><h3>A Comparison of Standard and Extended Bayesian Optimisation for Benchmark CFD Applications</h3><hr class="line-heading"/><h6>M. Sardar, S. Yildiz, M. Nikbay, N. Ince, and S. Rezaeiravesh</h6><p><strong>15th ERCOFTAC Workshop on Direct and Large Eddy Simulation, Delft, the Netherlands</strong><br/>2026</p><a class="btn-outline-reg mfp-close as-button" href="#publications">BACK</a></div></div></div>
+<!-- end of publication lightboxes --><!-- Testimonials -->
+<div class="slider ex-events">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h2>Events &amp; Posts</h2>
+<p class="p-heading">Upcoming &amp; Past Events</p>
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+<div class="row">
+<div class="col-lg-12">
+<!-- Card Slider -->
+<div class="slider-container">
+<div class="swiper-container card-slider">
+<div class="swiper-wrapper"><div class="swiper-slide"><div class="row recent-posts"><div class="col-sm-12"><div class="card h-100"><img alt="alternative" class="img-fluid" src="images/index-posts/wccm2026.jpg"/><div class="card-body"><h5 class="card-title"><a href="https://www.linkedin.com/posts/aeromdolab_aerospace-aeronautics-astronautics-activity-7487248928837636096-ylC_" rel="noreferrer noopener" target="_blank">ITU AeroMDO Lab at WCCM-ECCOMAS 2026</a></h5>19–24 July 2026 | Munich, Germany</div></div></div></div></div><div class="swiper-slide"><div class="row recent-posts"><div class="col-sm-12"><div class="card h-100"><img alt="alternative" class="img-fluid" src="images/index-posts/pinar-acar-2026.jpg"/><div class="card-body"><h5 class="card-title"><a href="https://www.linkedin.com/posts/aeromdolab_we-are-delighted-to-welcome-our-alumna-prof-activity-7485784690734350336-1ynZ" rel="noreferrer noopener" target="_blank">Prof. Pınar Acar Joins ITU AeroMDO Lab as a Visiting Professor</a></h5>2026–2027 Academic Year</div></div></div></div></div><div class="swiper-slide"><div class="row recent-posts"><div class="col-sm-12"><div class="card h-100"><img alt="alternative" class="img-fluid" src="images/index-posts/wccm2026-announcement.jpg"/><div class="card-body"><h5 class="card-title"><a href="https://www.linkedin.com/posts/aeromdolab_whats-new-at-wccm-eccomas-2026-activity-7483205064648495104-C3hM" rel="noreferrer noopener" target="_blank">What’s New at WCCM-ECCOMAS 2026: AeroMDO Lab Presentations</a></h5>19–24 July 2026 | Munich, Germany</div></div></div></div></div><div class="swiper-slide"><div class="row recent-posts"><div class="col-sm-12"><div class="card h-100"><img alt="alternative" class="img-fluid" src="images/index-posts/academic-performance-award-2026.jpg"/><div class="card-body"><h5 class="card-title"><a href="https://www.linkedin.com/posts/aeromdolab_academic-performance-award-activity-7475503083834351617-J_cW" rel="noreferrer noopener" target="_blank">ITU Rectorate 2026 Academic Performance &amp; Publication Awards</a></h5>2026 | Istanbul Technical University</div></div></div></div></div></div> <!-- end of swiper-wrapper -->
+<!-- Add Arrows -->
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<!-- end of add arrows -->
+</div> <!-- end of swiper-container -->
+</div> <!-- end of sliedr-container -->
+<!-- end of card slider -->
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of slider -->
+<!-- end of testimonials -->
+<!-- Team -->
+<div class="basic-2" id="members">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<h2>AeroMDO Team</h2>
+<p class="p-heading">Current Members</p>
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+<!-- Team Member -->
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/melike-nikbay.png"/>
+</div> <!-- end of image-wrapper -->
+<p class="p-large">Prof. Dr. Melike Nikbay</p>
+<p class="job-title">Principal Investigator</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/melike-nikbay-3398714/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:nikbay@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Melike-Nikbay" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://scholar.google.com/citations?user=2fQxP2oAAAAJ&amp;hl=tr" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-graduation-cap fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://web.itu.edu.tr/~nikbay/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-home fa-stack-1x"></i>
+</a>
+</span>
+</span>
+</div> <!-- end of team-member -->
+<!-- end of team member -->
+<div class="row">
+<div class="col-lg-12">
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- end of row -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<!-- Team Member -->
+<!-- end of team-member -->
+<!-- end of team member -->
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/pranesh-chandrasekaran.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Dr. Pranesh Chandrasekaran</p>
+<p class="job-title">Post-Doctoral Researcher</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="www.linkedin.com/in/pranesh-chandrasekaran" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:chandrasekaran@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Pranesh-Chandrasekaran/research" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://scholar.google.com/citations?user=Hc8CtOcAAAAJ&amp;hl=en" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-graduation-cap fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div><div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/dilan-kilic.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Dilan Kilic</p>
+<p class="job-title">Research Assistant</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/kilicdilan/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:kilicd15@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Dilan-Kilic" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://scholar.google.com/citations?hl=tr&amp;user=1hWFDIMAAAAJ" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-graduation-cap fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://web.itu.edu.tr/kilicd15/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-home fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div><div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/murat-kurnaz.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Murat Kurnaz</p>
+<p class="job-title">Research Assistant</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/murat-kurnaz" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:kurnazm19@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span><!-- end of social-icons -->
+</span></div><div class="row">
+<div class="col-lg-12">
+<p class="p-heading">Part-Time Members</p>
+</div> <!-- end of col -->
+</div>
+<div class="part-time-grid">
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/sihmehmet-yildiz.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Sihmehmet Yildiz</p>
+<p class="job-title">Graduate Researcher</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/sihmehmetyildiz-1314itu/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:yildizsih@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Sihmehmet-Yildiz" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://scholar.google.com/citations?hl=tr&amp;user=50Dp8R0AAAAJ" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-graduation-cap fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/emre-guler.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Emre Guler</p>
+<p class="job-title">Research Assistant</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/geaero/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:gulere22@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Emre_Gueler4" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://scholar.google.com/citations?user=GFQdzvsAAAAJ&amp;hl=tr&amp;authuser=1" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fas fa-graduation-cap fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/berkay-pirlepeli.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Berkay Pirlepeli</p>
+<p class="job-title">Graduate Researcher</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Berkay-Pirlepeli" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/enes-cakmak.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Enes Cakmak</p>
+<p class="job-title">Graduate Researcher</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/enes-%C3%A7akmak-96530a122/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:cakmake19@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/profile/Enes-Cakmak" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/index-members/burak-berkan-bedir.png"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Burak Berkan Bedir</p>
+<p class="job-title">Graduate Researcher</p>
+<span class="social-icons">
+<span class="fa-stack">
+<a href="https://www.linkedin.com/in/burakberkanbedir/" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="mailto:bedirb16@itu.edu.tr">
+<span class="hexagon"></span>
+<i class="fas fa-envelope fa-stack-1x"></i>
+</a>
+</span>
+</span><!-- end of social-icons -->
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/logo.svg"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Emir Han Tokel</p>
+<p class="job-title">Undergraduate Student</p>
+</div>
+<div class="team-member">
+<div class="image-wrapper">
+<img alt="alternative" class="img-fluid" src="images/logo.svg"/>
+</div> <!-- end of image wrapper -->
+<p class="p-large">Berke Bayram</p>
+<p class="job-title">Undergraduate Student</p>
+</div>
+</div>
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of basic-2 -->
+<!-- end of team -->
+<!-- Collaborations -->
+<div class="counter" id="partners">
+<div class="container">
+<div class="row">
+<div class="col-lg-5 col-xl-6">
+<div class="image-container">
+<img alt="alternative" class="img-fluid" src="images/collaborations.png"/>
+</div> <!-- end of image-container -->
+</div> <!-- end of col -->
+<div class="col-lg-7 col-xl-6">
+<div class="text-container">
+<div class="section-title">Collaborations</div>
+<h2>Active Collaborations</h2>
+<p align="justify">Our continuous goal is to establish and develop Public-University-Industry collaborations by employing both national and international funding resources.</p>
+<!-- Counter -->
+<div id="counter">
+<div class="cell">
+<div class="counter-value number-count" data-count="156">1</div>
+<div class="counter-info">Research Publications</div>
+</div>
+<div class="cell">
+<div class="counter-value number-count" data-count="36">1</div>
+<div class="counter-info">Research Projects</div>
+</div>
+<div class="cell">
+<div class="counter-value number-count" data-count="159">1</div>
+<div class="counter-info">Good Reviews</div>
+</div>
+</div>
+<!-- end of counter -->
+</div> <!-- end of text-container -->
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of counter -->
+<!-- end of about -->
+<!-- Contact -->
+<div class="form-2" id="contact">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div class="text-container">
+<div class="section-title">CONTACT</div>
+<h2>Get In Touch Using The Form</h2>
+<p>You can stop by our office for a cup of coffee and just use the contact form for any questions and inquiries</p>
+<ul class="list-unstyled li-space-lg">
+<li class="address"><i class="fas fa-map-marker-alt"></i>ITU Maslak Campus, Faculty of Aeronautics and Astronautics, MED-C Building, 34469 Maslak Istanbul, TR</li>
+<li><i class="fas fa-envelope"></i><a href="mailto:aeromdo@itu.edu.tr">aeromdo@itu.edu.tr</a></li>
+<li><i class="fas fa-phone"></i><a href="tel:003024630820">+90 212 285 31 16</a></li>
+<li><i class="fas fa-fax"></i><a href="tel:003024630820">+90 212 285 31 39</a></li>
+</ul>
+<h3>Follow AeroMDO Lab on Social Media</h3>
+<span class="fa-stack">
+<a href="https://www.youtube.com/channel/UCXEoJYXHZBG8nIv-2a4t54g" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-youtube fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://twitter.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-twitter fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://instagram.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-instagram fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.linkedin.com/company/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://www.researchgate.net/lab/AeroMDO-Lab-Melike-Nikbay" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-researchgate fa-stack-1x"></i>
+</a>
+</span>
+</div> <!-- end of text-container -->
+</div> <!-- end of col -->
+<div class="col-lg-6">
+<!-- Contact Form -->
+<form data-focus="false" data-toggle="validator" id="contactForm">
+<div class="form-group">
+<input class="form-control-input" id="cname" required="" type="text"/>
+<label class="label-control" for="cname">Name</label>
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<input class="form-control-input" id="cemail" required="" type="email"/>
+<label class="label-control" for="cemail">Email</label>
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<textarea class="form-control-textarea" id="cmessage" required=""></textarea>
+<label class="label-control" for="cmessage">Your message</label>
+<div class="help-block with-errors"></div>
+</div>
+<div class="form-group checkbox">
+<input id="cterms" required="" type="checkbox" value="Agreed-to-Terms"/>I agree with AeroMDO Lab's stated Privacy Policy and Terms Conditions
+                            <div class="help-block with-errors"></div>
+</div>
+<div class="form-group">
+<button class="form-control-submit-button" type="submit">SUBMIT MESSAGE</button>
+</div>
+<div class="form-message">
+<div class="h3 text-center hidden" id="cmsgSubmit"></div>
+</div>
+</form>
+<!-- end of contact form -->
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of form-2 -->
+<!-- end of contact -->
+<!-- Footer -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<h4>STAY CONNECTED</h4>
+<!-- Contact Form -->
+<form data-focus="false" data-toggle="validator" id="callMeForm">
+<div class="form-group">
+<input class="form-control-input" id="lemail" name="lemail" required="" type="email"/>
+<label class="label-control" for="lemail">Email</label>
+<div class="help-block with-errors"></div>
+</div>
+</form></div> <!-- end of col -->
+<div class="col-md-3">
+<h4> <br/></h4>
+<div class="form-group">
+<button class="form-control-submit-button-2" type="submit">SUBSCRIBE</button>
+</div>
+<div class="form-message">
+<div class="h3 text-center hidden" id="lmsgSubmit"></div>
+</div>
+<!-- end of contact form -->
+</div> <!-- end of col -->
+<div class="col-md-3">
+<div class="text-container">
+<h4>LINKS</h4>
+<ul class="list-unstyled li-space-lg white">
+<li>
+<a class="white" href="https://www.itu.edu.tr/en/homepage" rel="noreferrer noopener" target="_blank">Istanbul Technical University</a>
+</li>
+<li>
+<a class="white" href="https://uubf.itu.edu.tr/en/home" rel="noreferrer noopener" target="_blank">Faculty of Aeronautics and Astronautics</a>
+</li>
+<!--  <li>
+                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                            </li> -->
+</ul>
+</div> <!-- end of text-container -->
+</div> <!-- end of col -->
+<div class="col-md-3">
+<div class="text-container">
+<h4>SOCIAL</h4>
+<!-- social icons -->
+<span class="fa-stack">
+<a href="https://www.linkedin.com/company/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-linkedin-in fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://twitter.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-twitter fa-stack-1x"></i>
+</a>
+</span>
+<span class="fa-stack">
+<a href="https://instagram.com/aeromdolab" rel="noreferrer noopener" target="_blank">
+<span class="hexagon"></span>
+<i class="fab fa-instagram fa-stack-1x"></i>
+</a>
+</span>
+<!-- end of social icons -->
+</div> <!-- end of text-container -->
+</div> <!-- end of col -->
+</div> <!-- end of row -->
+</div> <!-- end of container -->
+</div> <!-- end of footer -->
+<!-- end of footer -->
+<!-- Copyright -->
+<div class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<p class="p-small">Copyright © 2026. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" rel="noreferrer noopener" target="_blank">Designed by AeroMDO</a></p>
+</div> <!-- end of col -->
+</div> <!-- enf of row -->
+</div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+<script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+/* Events & Posts: frame each post image; blurred copy fills empty space so any image size works */
+(function(){document.querySelectorAll('.ex-events .card > img').forEach(function(img){var f=document.createElement('div');f.className='ex-media';f.style.setProperty('--ex-bg','url("'+img.getAttribute('src')+'")');img.parentNode.insertBefore(f,img);f.appendChild(img);});})();
+</script>
+<script>
+/* Projects: status badge; Publications: topic tags + "view" label (runs before Isotope layout) */
+(function(){
+document.querySelectorAll('#projects .project-card-row').forEach(function(row,i){row.querySelectorAll('.card-image').forEach(function(ci){var b=document.createElement('span');b.className='pj-status'+(i===0?' is-live':'');b.textContent=i===0?'ONGOING':'COMPLETED';ci.appendChild(b);});});
+var names={};document.querySelectorAll('#publications .button-group a[data-filter]').forEach(function(a){var f=a.getAttribute('data-filter');if(f&&f!=='*')names[f.slice(1)]=a.textContent.trim();});
+window.addEventListener('load',function(){setTimeout(function(){if(window.jQuery&&jQuery.fn.isotope){try{jQuery('#publications .grid').isotope('layout');}catch(e){}}},300);});
+})();
+</script>
+</body>
+</html>

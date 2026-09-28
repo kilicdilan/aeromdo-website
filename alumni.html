@@ -31,6 +31,53 @@
 
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+<style>
+/* Alumni — redesign (matches Publications) */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.ax-tools { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:1.75rem; }
+.ax-tools .ax-label { font:500 12px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#6b7684; }
+.px-search { flex:0 1 300px; min-width:200px; padding:10px 16px; border:1px solid #cfd7e0; border-radius:40px; background:#fff; font:400 14px 'Open Sans',sans-serif; color:#142b4d; outline:none; transition:border-color .2s, box-shadow .2s; }
+.px-search:focus { border-color:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.15); }
+.ax-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr)); gap:20px; }
+.ax-card { position:relative; background:#fff; padding:1.75rem 1.75rem 1.5rem; display:flex; flex-direction:column; gap:1rem; border-top:3px solid #14bf98; box-shadow:0 1px 3px rgba(20,43,77,.08); transition:transform .4s cubic-bezier(.22,.61,.36,1), box-shadow .4s, border-color .4s; }
+.ax-card:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(20,43,77,.12); border-top-color:#142b4d; }
+.ax-head { display:flex; align-items:baseline; justify-content:space-between; gap:12px; }
+.ax-name { margin:0; font:700 1.15rem/1.3 Montserrat,sans-serif; color:#142b4d; text-align:left; transition:color .3s; }
+.ax-card:hover .ax-name { color:#0f9c7c; }
+.ax-num { font:700 12px Montserrat,sans-serif; letter-spacing:.12em; color:#b3bfcc; }
+.ax-pos { margin:-.4rem 0 0; font:500 13px/1.5 Montserrat,sans-serif; color:#0f8a6e; text-align:left; }
+.ax-fields { margin:0; display:flex; flex-direction:column; gap:.75rem; }
+.ax-fields dt { font:500 11px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#8a95a3; margin:0 0 .15rem; }
+.ax-fields dd { margin:0; font-size:14px; line-height:1.6; color:#34435a; text-align:left; }
+.ax-links { display:flex; gap:6px; margin-top:auto; padding-top:.5rem; }
+.ax-links a { display:flex; align-items:center; justify-content:center; width:34px; height:34px; border:1px solid #cfd7e0; border-radius:50%; color:#142b4d; font-size:13px; text-decoration:none; transition:background .2s, color .2s, border-color .2s, transform .2s; }
+.ax-links a:hover { background:#142b4d; border-color:#142b4d; color:#fff; transform:translateY(-2px); text-decoration:none; }
+.px-hidden { display:none !important; }
+.px-empty { padding:3rem 2rem; background:#fff; text-align:center; color:#6b7684; font:500 14px Montserrat,sans-serif; }
+.ex-basic-2 .button-container { margin-top:2rem; text-align:left; }
+@media (max-width: 575.98px) {
+  .ex-header-2 { padding:7.5rem 0 2.5rem; }
+  .ex-header-2 h2 { font-size:2.2rem; }
+  .px-search { flex:1 1 100%; }
+  .ax-card { padding:1.5rem 1.25rem 1.25rem; }
+}
+</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -505,5 +552,42 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+/* Alumni: rebuild cards from existing h3 / p / .social-icons markup — keep adding people the same way */
+(function(){
+var host=document.querySelector('.ex-basic-2'),start=document.querySelector('.ex-basic-1')||host,end=document.querySelector('.footer');if(!host)return;
+var btn=document.querySelector('.ex-basic-2 .button-container, .button-container');
+var P=Node.DOCUMENT_POSITION_FOLLOWING,people=[],cur=null;
+Array.prototype.forEach.call(document.querySelectorAll('h3, p, .social-icons'),function(n){
+  if(!(start.compareDocumentPosition(n)&P)||start.contains(n))return;
+  if(end&&!(n.compareDocumentPosition(end)&P))return;
+  if(btn&&btn.contains(n))return;
+  if(n.tagName==='H3'){cur={name:n.textContent.trim().replace(/^\d+\.\s*/,''),fields:[],pos:'',links:[]};people.push(cur);}
+  else if(!cur)return;
+  else if(n.tagName==='P'){var s=n.querySelector('strong');var label=s?s.textContent.replace(/:\s*$/,'').trim():'';var val=n.textContent.replace(s?s.textContent:'','').trim();if(!val||/^-+$/.test(val))return;if(/current position/i.test(label))cur.pos=val;else cur.fields.push([label,val]);}
+  else{n.querySelectorAll('a').forEach(function(a){var i=a.querySelector('i');cur.links.push({href:a.href,icon:i?i.className.replace(/fa-stack-1x/,'').trim():'fas fa-link',title:(i&&/linkedin/.test(i.className))?'LinkedIn':(i&&/graduation/.test(i.className))?'Google Scholar':(i&&/researchgate/.test(i.className))?'ResearchGate':'Website'});});}
+});
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML;}
+var main=document.createElement('div');
+main.innerHTML='<div class="ax-tools"><span class="ax-label">'+people.length+' alumni</span><input class="px-search" type="search" placeholder="Search name, thesis, position…"/></div>';
+var grid=document.createElement('div');grid.className='ax-grid';
+people.forEach(function(p,i){
+  var c=document.createElement('article');c.className='ax-card';
+  c.innerHTML='<div class="ax-head"><h3 class="ax-name">'+esc(p.name)+'</h3><span class="ax-num">'+String(i+1).padStart(2,'0')+'</span></div>'+
+   (p.pos?'<p class="ax-pos">'+esc(p.pos)+'</p>':'')+
+   (p.fields.length?'<dl class="ax-fields">'+p.fields.map(function(f){return '<div><dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd></div>';}).join('')+'</dl>':'')+
+   (p.links.length?'<div class="ax-links">'+p.links.map(function(l){return '<a href="'+l.href+'" target="_blank" rel="noreferrer noopener" title="'+l.title+'" aria-label="'+l.title+'"><i class="'+l.icon+'"></i></a>';}).join('')+'</div>':'');
+  grid.appendChild(c);p.el=c;
+});
+main.appendChild(grid);
+var empty=document.createElement('div');empty.className='px-empty px-hidden';empty.textContent='No alumni match your search.';main.appendChild(empty);
+if(btn)main.appendChild(btn);
+var n2=host.nextSibling;while(n2&&n2!==end){var nx=n2.nextSibling;if(!(n2.contains&&end&&n2.contains(end)))n2.parentNode.removeChild(n2);n2=nx;}
+host.innerHTML='';var ct=document.createElement('div');ct.className='container';ct.appendChild(main);host.appendChild(ct);
+var hd=document.querySelector('.ex-header-2 .col-md-12');
+if(hd){var st=document.createElement('div');st.className='px-stats';st.innerHTML='<span><b>'+people.length+'</b>alumni</span><span>Former AeroMDO Lab members</span>';hd.appendChild(st);}
+main.querySelector('.px-search').addEventListener('input',function(e){var q=e.target.value.trim().toLowerCase(),any=false;people.forEach(function(p){var ok=!q||p.el.textContent.toLowerCase().indexOf(q)>-1;p.el.classList.toggle('px-hidden',!ok);if(ok)any=true;});empty.classList.toggle('px-hidden',any);});
+})();
+</script>
 </body>
 </html>

@@ -27,6 +27,76 @@
 <link href="css/styles.css" rel="stylesheet"/>
 <!-- Favicon  -->
 <link href="images/favicon.png" rel="icon"/>
+<style>
+/* Publications — redesign */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.px-wrap { display:grid; grid-template-columns:180px minmax(0,1fr); gap:40px; align-items:start; }
+.px-side { position:sticky; top:96px; display:flex; flex-direction:column; gap:2px; }
+.px-side-label { font:500 11px Montserrat,sans-serif; letter-spacing:.18em; color:#6b7684; margin-bottom:.6rem; }
+.px-side a { display:flex; justify-content:space-between; align-items:center; padding:.55rem .9rem; font:700 15px Montserrat,sans-serif; color:#142b4d; text-decoration:none; border-left:2px solid #dfe4ea; transition:border-color .2s, color .2s, background .2s; }
+.px-side a span { font:500 12px Montserrat,sans-serif; color:#8a95a3; }
+.px-side a:hover { color:#0f9c7c; text-decoration:none; }
+.px-side a.is-active { border-left-color:#14bf98; background:#fff; color:#142b4d; }
+.px-side a.is-empty { opacity:.35; }
+.px-tools { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; margin-bottom:1.75rem; }
+.px-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.px-chip { border:1px solid #cfd7e0; background:#fff; color:#142b4d; padding:8px 16px; border-radius:40px; font:500 13px Montserrat,sans-serif; cursor:pointer; transition:background .2s, color .2s, border-color .2s; }
+.px-chip:hover { border-color:#142b4d; }
+.px-chip.is-on { background:#142b4d; border-color:#142b4d; color:#fff; }
+.px-search { flex:0 1 280px; min-width:200px; padding:10px 16px; border:1px solid #cfd7e0; border-radius:40px; background:#fff; font:400 14px 'Open Sans',sans-serif; color:#142b4d; outline:none; transition:border-color .2s, box-shadow .2s; }
+.px-search:focus { border-color:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.15); }
+.px-year { background:#fff; margin-bottom:24px; box-shadow:0 1px 3px rgba(20,43,77,.08); scroll-margin-top:96px; }
+.px-year-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; padding:1.5rem 2rem; border-bottom:1px solid #e3e8ee; }
+.px-year-head h2 { margin:0; font:700 2rem/1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+.px-year-head span { font:500 12px Montserrat,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#6b7684; }
+.px-group { padding:1.5rem 2rem .5rem; }
+.px-group + .px-group { border-top:1px solid #eef1f4; }
+.px-group h3 { display:flex; align-items:center; gap:10px; margin:0 0 .75rem; font:700 12px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#0f9c7c; text-align:left; }
+.px-group h3::before { content:""; width:8px; height:8px; background:#14bf98; transform:rotate(45deg); }
+.px-list { list-style:none; margin:0; padding:0; }
+.px-item { position:relative; margin:0 -1rem; padding:1rem 1rem 1rem 1rem; border-radius:4px; transition:background .2s; }
+.px-item + .px-item { border-top:1px solid #f0f2f5; }
+.px-item:hover { background:#f7f9fb; }
+.px-item p { margin:0; font-size:15px; line-height:1.65; color:#34435a; text-align:left; }
+.px-item p strong { display:block; margin-bottom:.2rem; font:500 13px/1.5 Montserrat,sans-serif; color:#6b7684; }
+.px-item p em { color:#142b4d; }
+.px-item p a { display:inline-flex; align-items:center; gap:6px; margin:.5rem .4rem 0 0; padding:4px 12px; border:1px solid #cfd7e0; border-radius:40px; font:500 12px Montserrat,sans-serif; color:#142b4d; text-decoration:none; white-space:nowrap; transition:background .2s, color .2s, border-color .2s; }
+.px-item p a::after { content:"↗"; font-size:12px; }
+.px-item p a:hover { background:#142b4d; border-color:#142b4d; color:#fff; }
+.px-hidden { display:none !important; }
+.px-empty { padding:3rem 2rem; background:#fff; text-align:center; color:#6b7684; font:500 14px Montserrat,sans-serif; }
+.ex-basic-2 .button-container { margin-top:2rem; text-align:left; }
+@media (max-width: 991.98px) {
+  .px-wrap { grid-template-columns:1fr; gap:20px; }
+  .px-side { position:static; flex-direction:row; overflow-x:auto; gap:6px; padding-bottom:4px; }
+  .px-side-label { display:none; }
+  .px-side a { flex:none; gap:8px; border-left:0; border-bottom:2px solid #dfe4ea; }
+  .px-side a.is-active { border-bottom-color:#14bf98; }
+}
+@media (max-width: 575.98px) {
+  .ex-header-2 { padding:7.5rem 0 2.5rem; }
+  .ex-header-2 h2 { font-size:2.2rem; }
+  .px-search { flex:1 1 100%; }
+  .px-year-head, .px-group { padding-left:1.25rem; padding-right:1.25rem; }
+  .px-item { margin:0 -.5rem; padding:.9rem .5rem; }
+}
+</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 <!-- Preloader -->
@@ -465,5 +535,59 @@
 <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
 <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+/* Publications: rebuild year/category structure from existing h2/h3/p markup — keep adding papers the same way */
+(function(){
+var host=document.querySelector('.ex-basic-2'),start=document.querySelector('.ex-basic-1')||host,end=document.querySelector('.footer');if(!host) return;
+var btn=document.querySelector('.button-container');
+var data=[],y=null,g=null;
+var P=Node.DOCUMENT_POSITION_FOLLOWING;
+Array.prototype.forEach.call(document.querySelectorAll('h2,h3,p'),function(n){
+  if(!(start.compareDocumentPosition(n)&P)||start.contains(n)) return;
+  if(end&&!(n.compareDocumentPosition(end)&P)) return;
+  if(btn&&btn.contains(n)) return;
+  if(n.tagName==='H2'){y={year:n.textContent.trim(),groups:[]};data.push(y);g=null;}
+  else if(n.tagName==='H3'){if(!y)return;g={title:n.textContent.trim(),items:[]};y.groups.push(g);}
+  else if(g&&n.textContent.trim()){g.items.push(n);}
+});
+function typeOf(t){t=t.toLowerCase();if(t.indexOf('national')===0)return'national';if(t.indexOf('journal')>-1)return'journal';if(t.indexOf('book')>-1||t.indexOf('chapter')>-1||t.indexOf('report')>-1)return'book';return'conference';}
+var wrap=document.createElement('div');wrap.className='px-wrap';
+var side=document.createElement('nav');side.className='px-side';side.innerHTML='<div class="px-side-label">YEAR</div>';
+var main=document.createElement('div');main.className='px-main';
+main.innerHTML='<div class="px-tools"><div class="px-chips">'+[['all','All'],['journal','Journal Papers'],['conference','Conferences'],['book','Book Chapters &amp; Reports'],['national','National']].map(function(c,i){return '<button type="button" class="px-chip'+(i?'':' is-on')+'" data-type="'+c[0]+'">'+c[1]+'</button>';}).join('')+'</div><input class="px-search" type="search" placeholder="Search title, author, venue…"/></div>';
+var total=0,counts={};
+data.forEach(function(yr){
+  var sec=document.createElement('section');sec.className='px-year';sec.id='y'+yr.year;
+  sec.innerHTML='<div class="px-year-head"><h2>'+yr.year+'</h2><span class="px-count"></span></div>';
+  yr.groups.forEach(function(gr){
+    if(!gr.items.length) return;
+    var d=document.createElement('div');d.className='px-group';d.dataset.type=typeOf(gr.title);
+    d.innerHTML='<h3>'+gr.title+'</h3>';var ol=document.createElement('ol');ol.className='px-list';
+    gr.items.forEach(function(p){
+      var s=p.querySelector('strong');if(s&&s.firstChild&&s.firstChild.nodeType===3)s.firstChild.nodeValue=s.firstChild.nodeValue.replace(/^\s*❍\s*/,'');
+      if(s)s.innerHTML=s.innerHTML.replace(/[,\s]+$/,'');if(s&&s.nextSibling&&s.nextSibling.nodeType===3)s.nextSibling.nodeValue=s.nextSibling.nodeValue.replace(/^[\s,]+/,'');
+      var li=document.createElement('li');li.className='px-item';li.appendChild(p);ol.appendChild(li);total++;
+      counts[d.dataset.type]=(counts[d.dataset.type]||0)+1;
+    });
+    d.appendChild(ol);sec.appendChild(d);
+  });
+  var a=document.createElement('a');a.href='#y'+yr.year;a.innerHTML=yr.year+'<span></span>';side.appendChild(a);yr.link=a;yr.sec=sec;
+  main.appendChild(sec);
+});
+var empty=document.createElement('div');empty.className='px-empty px-hidden';empty.textContent='No publications match your search.';main.appendChild(empty);
+if(btn)main.appendChild(btn);
+var n2=host.nextSibling;while(n2&&n2!==end){var nx=n2.nextSibling;if(!(n2.contains&&end&&n2.contains(end)))n2.parentNode.removeChild(n2);n2=nx;}
+wrap.appendChild(side);wrap.appendChild(main);host.innerHTML='';var ct=document.createElement('div');ct.className='container';ct.appendChild(wrap);host.appendChild(ct);
+var hd=document.querySelector('.ex-header-2 .col-md-12');
+if(hd&&data.length){var st=document.createElement('div');st.className='px-stats';st.innerHTML='<span><b>'+total+'</b>publications</span><span><b>'+(counts.journal||0)+'</b>journal papers</span><span><b>'+data[data.length-1].year+'–'+data[0].year+'</b></span>';hd.appendChild(st);}
+var type='all',q='';
+function apply(){var any=false;data.forEach(function(yr){var n=0;yr.sec.querySelectorAll('.px-group').forEach(function(d){var m=0;var okT=type==='all'||d.dataset.type===type;d.querySelectorAll('.px-item').forEach(function(li){var ok=okT&&(!q||li.textContent.toLowerCase().indexOf(q)>-1);li.classList.toggle('px-hidden',!ok);if(ok)m++;});d.classList.toggle('px-hidden',!m);n+=m;});yr.sec.classList.toggle('px-hidden',!n);yr.sec.querySelector('.px-count').textContent=n+(n===1?' publication':' publications');yr.link.querySelector('span').textContent=n;yr.link.classList.toggle('is-empty',!n);if(n)any=true;});empty.classList.toggle('px-hidden',any);}
+main.querySelectorAll('.px-chip').forEach(function(c){c.addEventListener('click',function(){main.querySelectorAll('.px-chip').forEach(function(x){x.classList.toggle('is-on',x===c);});type=c.dataset.type;apply();});});
+main.querySelector('.px-search').addEventListener('input',function(e){q=e.target.value.trim().toLowerCase();apply();});
+side.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;e.preventDefault();e.stopPropagation();var t=document.querySelector(a.getAttribute('href'));if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-90,behavior:'smooth'});},true);
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){data.forEach(function(yr){yr.link.classList.toggle('is-active',yr.sec===en.target);});}});},{rootMargin:'-120px 0px -60% 0px'});data.forEach(function(yr){io.observe(yr.sec);});}
+apply();
+})();
+</script>
 </body>
 </html>

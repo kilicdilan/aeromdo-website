@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="AeroMDO (Aerospace Multidisciplinary Design Optimization) Lab's purpose is to develop leading-edge aerospace & defense technology and to move these out of the lab into the real world. Its current research interests mainly focus on a number of disciplines and techniques: Aeroelasticity, Aerodynamics, Sonic Boom Minimization, Reduced Order Modeling, MDO, UQ, and Deep Learning.">
-    <meta name="author" content="AeroMDO Lab">
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="ITU Aerospace Multidisciplinary Design Optimization Laboratory" /> <!-- website name -->
-	<meta property="og:site" content="https://aeromdo.itu.edu.tr/" /> <!-- website link -->
-	<meta property="og:title" content="ITU AeroMDO Lab Current Projects"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Posted on AeroMDO Lab's website" /> <!-- description shown in the actual shared post -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="https://aeromdo.itu.edu.tr/images/index-projects/projects-1.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://www.linkedin.com/company/aeromdolab" /> <!-- where do you want your post to link to -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>ITU AeroMDO Lab Current Projects</title>
+    <title>Development of Environmentally Friendly Aircraft with High Aspect Ratio Wings via Multi-Fidelity Surrogate Modeling Based Aeroelastic Optimization | ITU AeroMDO Lab</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -31,6 +31,64 @@
 
 	<!-- Favicon  -->
     <link rel="icon" href="../images/favicon.png">
+<style>
+/* Project pages — redesign (matches Publications/Alumni) */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-header-2 .pj-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .pj-eyebrow i { width:8px; height:8px; border-radius:50%; background:#8a95a3; }
+.ex-header-2 .pj-eyebrow i.is-live { background:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.2); }
+.ex-header-2 h2.pj-title { font-size:2.2rem; line-height:1.25; max-width:980px; text-wrap:balance; }
+.ex-header-2 h2.pj-title::before { display:none; }
+.pj-meta { display:flex; flex-wrap:wrap; gap:12px 36px; margin-top:1.5rem; }
+.pj-meta div { display:flex; flex-direction:column; gap:3px; }
+.pj-meta span { font:500 11px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#6b7684; }
+.pj-meta b { font:700 14px Montserrat,sans-serif; color:#142b4d; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.pj-doc { background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); padding:2.25rem 2.75rem 2.5rem; max-width:980px; }
+.pj-tabs { display:flex; gap:8px; margin-bottom:1.75rem; padding-bottom:1.25rem; border-bottom:1px solid #e3e8ee; }
+.pj-tabs button { border:1px solid #cfd7e0; background:#fff; color:#142b4d; padding:8px 18px; border-radius:40px; font:500 13px Montserrat,sans-serif; cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
+.pj-tabs button:hover { border-color:#142b4d; }
+.pj-tabs button.is-on { background:#142b4d; border-color:#142b4d; color:#fff; }
+.pj-lang.px-hidden { display:none; }
+.pj-sec + .pj-sec { margin-top:1.75rem; }
+.pj-sec h3 { display:flex; align-items:center; gap:10px; margin:0 0 .85rem; font:700 12px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#0f8a6e; text-align:left; }
+.pj-sec h3::before { content:""; width:8px; height:8px; background:#14bf98; transform:rotate(45deg); }
+.pj-sec p { margin:0 0 .9rem; font-size:15.5px; line-height:1.8; color:#34435a; text-align:left; text-wrap:pretty; }
+.pj-sec p.pj-empty { color:#8a95a3; font-style:italic; }
+.pj-fig { margin:1.75rem 0; }
+.pj-fig img { display:block; width:100%; height:auto; border:1px solid #e3e8ee; }
+.pj-fig figcaption { margin-top:.6rem; font:500 13px Montserrat,sans-serif; color:#6b7684; text-align:left; }
+.pj-related { margin-top:2.25rem; padding-top:1.5rem; border-top:1px solid #e3e8ee; }
+.pj-related .pj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr)); gap:16px; }
+.pj-related a.pj-card { display:flex; flex-direction:column; gap:6px; padding:1rem 1.1rem; border:1px solid #e3e8ee; border-top:3px solid #14bf98; text-decoration:none; transition:border-color .3s, box-shadow .3s, transform .3s; }
+.pj-related a.pj-card:hover { transform:translateY(-3px); border-top-color:#142b4d; box-shadow:0 10px 24px rgba(20,43,77,.1); text-decoration:none; }
+.pj-related .pj-card b { font:700 14px/1.45 Montserrat,sans-serif; color:#142b4d; }
+.pj-related .pj-card span { font:500 12px Montserrat,sans-serif; color:#6b7684; }
+.pj-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:2.25rem; }
+.pj-actions a { display:inline-flex; align-items:center; gap:10px; padding:13px 30px; border-radius:32px; border:2px solid #142b4d; font:700 13px Montserrat,sans-serif; letter-spacing:.12em; text-decoration:none; transition:background .2s,color .2s,border-color .2s; }
+.pj-actions a.pj-back { color:#142b4d; background:#fff; }
+.pj-actions a.pj-back::before { content:"←"; }
+.pj-actions a.pj-back:hover { background:#142b4d; color:#fff; text-decoration:none; }
+.pj-actions a.pj-pdf { color:#fff; background:#142b4d; }
+.pj-actions a.pj-pdf::before { content:"\f1c1"; font-family:"Font Awesome 5 Free"; font-weight:400; }
+.pj-actions a.pj-pdf:hover { background:#24467a; border-color:#24467a; color:#fff; text-decoration:none; }
+@media (max-width: 575.98px) { .ex-header-2 { padding:7.5rem 0 2.5rem; } .ex-header-2 h2.pj-title { font-size:1.55rem; } .pj-doc { padding:1.5rem 1.25rem 1.75rem; } .pj-actions a { flex:1 1 100%; justify-content:center; } }
+</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -47,8 +105,6 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="../index.html">Aria</a> -->
 
         <!-- Image Logo -->
         <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.svg" alt="alternative"></a>
@@ -61,105 +117,103 @@
         <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link page-scroll" href="../index.html#header">HOME<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link page-scroll" href="../index.html#contact">CONTACT</a>
-				</li>
-			</ul>
-			<span class="nav-item social-icons">
-				<span class="fa-stack">
-					<a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
-						<span class="hexagon"></span>
-						<i class="fab fa-linkedin-in fa-stack-1x"></i>
-					</a>
-				</span>
-				<span class="fa-stack">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#header">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
 					<a href="https://instagram.com/aeromdolab" target="_blank" rel="noreferrer noopener">
 						<span class="hexagon"></span>
 						<i class="fab fa-instagram fa-stack-1x"></i>
 					</a>
 				</span>
-				<span class="fa-stack">
-					<a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
-						<span class="hexagon"></span>
-						<i class="fab fa-twitter fa-stack-1x"></i>
-					</a>
-				</span>
-			</span>
-		</div>
-	</nav> <!-- end of navbar -->
+                <span class="fa-stack">
+                    <a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
 
     <!-- Header -->
-    <header id="header" class="ex-header-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Development of Environmentally Friendly Aircrafts with High Aspect Ratio Wings via Multi-fidelity Surrogate Modeling Based Aeroelastic Optimization</h2>
-                    <h3><i>TUBITAK 1001 Scientific and Technological Research Projects Funding Program</i></h3>
-                    <h6>April, 2023 - 2026 (On-going)</h6>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+<header id="header" class="ex-header-2">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pj-eyebrow"><i class=""></i>PROJECT · COMPLETED</div>
+<h2 class="pj-title">Development of Environmentally Friendly Aircraft with High Aspect Ratio Wings via Multi-Fidelity Surrogate Modeling Based Aeroelastic Optimization</h2>
+<div class="pj-meta"><div><span>Funding</span><b>TUBITAK 1001 Scientific and Technological Research Projects Funding Program</b></div><div><span>Director</span><b>Melike Nikbay</b></div><div><span>Period</span><b>Apr 2023 - Apr 2026</b></div></div>
+</div>
+</div>
+</div>
+</header>
+<!-- end of header -->
+
+<!-- Breadcrumbs -->
+<div class="ex-basic-1">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="breadcrumbs">
+<a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><a href="../index.html#projects">Projects</a><i class="fa fa-angle-double-right"></i><span>Project Details</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end of breadcrumbs -->
+
+<!-- Project Content -->
+<div class="ex-basic-2">
+<div class="container">
+<article class="pj-doc">
+<div class="pj-tabs" role="tablist"><button type="button" class="is-on" data-lang="en">English</button><button type="button" data-lang="tr">Türkçe</button></div>
+<!-- ENGLISH -->
+<div class="pj-lang" data-lang="en">
+<section class="pj-sec">
+<h3>Summary of the Project</h3>
+<p>The effects of climate change are becoming more evident in our lives. One of the challenging goals in civil aviation transportation today is the development of high aspect ratio wings that are both economically and environmentally efficient. The global aviation industry is responsible for approximately 2.1% of all man-made carbon dioxide (CO2) emissions. With this awareness, as a part of the global effort to reduce CO2 emissions in recent years, it is of great importance to examine wings with high aspect ratio and to reduce CO2 emissions by limiting induced drag with increasing aspect ratio. The aspect ratio of aircrafts such as Boeing 787 and Airbus A350, which are widely used in today's civil aviation transportation is approximately 11 and this ratio is still far below the optimum value [1]. Thus, the design and development of high aspect ratio wings has become very crucial in the new generation civil aviation transportation. However, there are some difficulties and limitations in the design and operational processes of high-aspect ratio wings. Foremost among these are the limitations imposed by the high aspect ratio in airport operating areas such as the runway and taxiway separation. In this regard, folding wingtips attract great attention because it improves flight performance, efficiency and load alleviation as it minimizes the operational limitations. The folding wing concept allowing for flare angle adaptation was first patented by Airbus. A similar concept was adapted by Boeing to the B777X model with a 7m wingspan extension to improve performance by reducing drag.</p>
+<p>On the other hand, the flexibility that comes with increasing aspect ratio causes large deformations in the structure. Extremely flexible structures with high deformations become more susceptible to aeroelastic instabilities in flight with sufficient and high levels of perturbation. This situation revealed the necessity of examining the aeroelastic and aerodynamic effects of high aspect ratio wings with folding wing mechanism, the suppression of flutter out of the flight envelope to design more reliable structures.</p>
+<p>Within the scope of this project, the flutter problem that causes damage to aircraft structures is prevented by using a multi fidelity deep neural network and co-Kriging models and optimization algorithms for high aspect ratio wing configurations with folding wingtip mechanism. A more reliable flight will be possible for different flight conditions by increasing the flutter speed of the structure as compared to the initial design. In order to increase the flutter speed, it is aimed to perform (1) design changes in wing geometry, (2) placement/geometry of the folding wingtip system, and (3) changes in material properties. It is desirable that the optimization process be computationally efficient and at the same time reliable.</p>
+<p>The main purpose of the project is to study high aspect ratio wings with the concept of folding wingtip, which is efficient in terms of environmental, aerodynamic and airport operations. In addition, with the aim of developing technological capabilities in AI assisted design process in Turkiye, the development of in-house codes and methods, the adaptation of open-source codes and their coupling interfaces are aimed within the scope of the project.</p>
+</section>
+</div>
+<!-- TÜRKÇE -->
+<div class="pj-lang" data-lang="tr">
+<section class="pj-sec">
+<h3>Proje Özeti</h3>
+<p>İklim değişikliğinin etkileri günlük hayatımızda açık ve belirgindir. Günümüzde sivil havacılık taşımacılığındaki zorlu hedeflerden biri hem ekonomik hem de çevresel açıdan verimli olan yüksek açıklık oranlı araçların geliştirilmesidir. Küresel havacılık endüstrisi, insan kaynaklı tüm karbondioksit (CO2) emisyonlarının yaklaşık %2.1'lik oranından sorumludur. Bu farkındalıkla, son yıllarda, CO2 emisyonlarının azaltılmasına yönelik küresel çabanın bir parçası olarak havacılık sektöründe yakıt sarfiyatının azaltılması hedeflenmektedir. Bu kapsamda, artan açıklık oranıyla aerodinamik verimliliğin artması için indüklenmiş sürüklemeyi (induced drag) sınırlayarak CO2 emisyonunun azaltılmasına yönelik araştırmalar büyük önem taşımaktadır. Boeing 787 ve Airbus A350 gibi günümüz sivil havacılık taşımacılığında yaygın kullanılan uçaklarda kanat açıklık oranı yaklaşık olarak 11'dir ve bu oran hala optimum değerin çok altındadır [1]. Bu durum, yeni nesil sivil havacılık taşımacılığında daha yüksek kanat açıklık oranına sahip modellerin tasarımı ve geliştirilmesine yönelik çalışmaların hızla önem kazanmasına neden olmuştur. Fakat, yüksek açıklık oranlı kanatların tasarımında ve operasyon süreçlerinde birtakım zorluklar ve sınırlamalar bulunmaktadır. Bunların başında, pist ve taksi yolu ayrımı gibi havalimanı işletme bölgelerinde, yüksek açıklık oranından kaynaklı sınırlamalar gelmektedir. Bu konuda, katlanır kanat uçları (folding wingtips) yük hafifletme, uçuş performansı ve operasyonel durumlardaki verimliliği artırması ve sınırlamaları en aza indirmesi nedeniyle büyük ilgi görmektedir. Katlanma açısı adaptasyonuna izin veren mafsallı katlanır kanatçık konsepti ilk olarak Airbus tarafından patentlendi [2]. Yine aynı konsept Boeing tarafından, sürüklemeyi azaltarak performansı iyileştirmesi sağlamak amacıyla 7m kanat açıklığı uzantısı ile B777X modeline uyarlanmıştır.</p>
+<p>Diğer bir taraftan, artan açıklık oranıyla beraber gelen esneklik (flexibility) yapıda büyük deformasyonlara neden olmaktadır. Yüksek deformasyonlara sahip son derece esnek (highly flexible) yapılar, uçuş sırasında yeterli ve yüksek seviyede bozuntularla (perturbation) birlikte aeroelastik kararsızlıklara daha duyarlı hale gelmektedir. Bu durum, katlanır kanat mekanizmasına sahip yüksek açıklık oranlı kanatlarda aeroelastik etkilerin incelenmesini, flutter hızının uçuş zarfının dışına ötelenmesini, kullanılan modelin aerodinamik ve aeroelastik açıdan performansının incelenmesini ve daha güvenilir yapılar oluşturulması gerekliliğini ortaya koymuştur.</p>
+<p>Bu projenin kapsamı, uçak yapılarının hasarına sebep olan flutter probleminin, katlanır kanat ucu mekanizmasına sahip yüksek açıklık oranlı kanat konfigürasyonları için en iyi tasarıma ulaşmayı sağlayacak çok doğruluklu derin sinir ağı ve co-kriging temsili modelleri ve optimizasyon algoritmalarının kullanılarak önlenmesidir. Yapı üzerinde flutter hızının başlangıç durumuna göre artışının sağlanması ile farklı uçuş koşulları için daha güvenli bir uçuş mümkün kılınabilecektir. Flutter hızının artışını sağlamak adına (1) kanat geometrisinde değişiklikler, (2) katlanır kanatçık sisteminin yerleşimi/geometrisi ve (3) malzeme özellikleri ile ilgili eniyileme sağlanması amaçlanmaktadır. Eniyileme sürecinin hesaplama açısından verimli ve aynı zamanda da güvenilir bir doğrulukta olması (efficent and accurate) istenmektedir. Bu sebeple, optimizasyon ve temsili model algoritmalarında, çok doğruluklu hesaplama yöntemlerinin kullanılması hedeflenmektedir.</p>
+<p>Projenin temel amacı, havacılık araştırmalarının son zamanlarda yoğunlaşmış olduğu çevresel, aerodinamik ve havalimanı operasyonları açısından verimli katlanır kanat ucu konseptine sahip yüksek açıklık oranlı kanatların sivil havacılık modellerine uygulanması ve aeroelastik açıdan verimliliğinin incelenmesidir. Ayrıca, Türkiye'de de teknoloji altyapısı kurmak amacı ile öncelikli olarak kurum içi kodların ve yöntemlerin geliştirilmesi, açık kaynaklı kodların adaptasyonu ve bunun için bağlantı ara yüzlerinin geliştirilmesi proje kapsamındaki hedefler arasında yer almaktadır.</p>
+</section>
+</div>
 
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Projects</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-
-
-    <!-- Terms Content -->
-	    <div class="ex-basic-2">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-12">
-                        <div class="text-container"></div>
-	                        <h3>Summary of the Project </h3>
-	                        <p align="justify">The effects of climate change are becoming more evident in our lives. One of the challenging goals in civil aviation transportation today is the development of high aspect ratio wings that are both economically and environmentally efficient. The global aviation industry is responsible for approximately 2.1% of all man-made carbon dioxide (CO2) emissions. With this awareness, as a part of the global effort to reduce CO2 emissions in recent years, it is of great importance to examine wings with high aspect ratio and to reduce CO2 emissions by limiting induced drag with increasing aspect ratio. The aspect ratio of aircrafts such as Boeing 787 and Airbus A350, which are widely used in today's civil aviation transportation is approximately 11 and this ratio is still far below the optimum value [1]. Thus, the design and development of high aspect ratio wings has become very crucial in the new generation civil aviation transportation. However, there are some difficulties and limitations in the design and operational processes of high-aspect ratio wings. Foremost among these are the limitations imposed by the high aspect ratio in airport operating areas such as the runway and taxiway separation. In this regard, folding wingtips attract great attention because it improves flight performance, efficiency and load alleviation as it minimizes the operational limitations. The folding wing concept allowing for flare angle adaptation was first patented by Airbus. A similar concept was adapted by Boeing to the B777X model with a 7m wingspan extension to improve performance by reducing drag.
-                                On the other hand, the flexibility that comes with increasing aspect ratio causes large deformations in the structure. Extremely flexible structures with high deformations become more susceptible to aeroelastic instabilities in flight with sufficient and high levels of perturbation. This situation revealed the necessity of examining the aeroelastic and aerodynamic effects of high aspect ratio wings with folding wing mechanism, the suppression of flutter out of the flight envelope to design more reliable structures.
-                                Within the scope of this project, the flutter problem that causes damage to aircraft structures is prevented by using a multi fidelity deep neural network and co-Kriging models and optimization algorithms for high aspect ratio wing configurations with folding wingtip mechanism. A more reliable flight will be possible for different flight conditions by increasing the flutter speed of the structure as compared to the initial design. In order to increase the flutter speed, it is aimed to perform (1) design changes in wing geometry, (2) placement/geometry of the folding wingtip system, and (3) changes in material properties. It is desirable that the optimization process be computationally efficient and at the same time reliable.
-                                The main purpose of the project is to study high aspect ratio wings with the concept of folding wingtip, which is efficient in terms of environmental, aerodynamic and airport operations. In addition, with the aim of developing technological capabilities in AI assisted design process in Turkiye, the development of in-house codes and methods, the adaptation of open-source codes and their coupling interfaces are aimed within the scope of the project.
-                                </p>
-						</div> <!-- end of text-container -->
-	                    <div class="text-container">
-	                        <h3>Projenin Amacı</h3>
-	                        <p align="justify">İklim değişikliğinin etkileri günlük hayatımızda açık ve belirgindir. Günümüzde sivil havacılık taşımacılığındaki zorlu hedeflerden biri hem ekonomik hem de çevresel açıdan verimli olan yüksek açıklık oranlı araçların geliştirilmesidir. Küresel havacılık endüstrisi, insan kaynaklı tüm karbondioksit (CO2) emisyonlarının yaklaşık %2.1'lik oranından sorumludur. Bu farkındalıkla, son yıllarda, CO2 emisyonlarının azaltılmasına yönelik küresel çabanın bir parçası olarak havacılık sektöründe yakıt sarfiyatının azaltılması hedeflenmektedir. Bu kapsamda, artan açıklık oranıyla aerodinamik verimliliğin artması için indüklenmiş sürüklemeyi (induced drag) sınırlayarak CO2 emisyonunun azaltılmasına yönelik araştırmalar büyük önem taşımaktadır. Boeing 787 ve Airbus A350 gibi günümüz sivil havacılık taşımacılığında yaygın kullanılan uçaklarda kanat açıklık oranı yaklaşık olarak 11'dir ve bu oran hala optimum değerin çok altındadır [1]. Bu durum, yeni nesil sivil havacılık taşımacılığında daha yüksek kanat açıklık oranına sahip modellerin tasarımı ve geliştirilmesine yönelik çalışmaların hızla önem kazanmasına neden olmuştur. Fakat, yüksek açıklık oranlı kanatların tasarımında ve operasyon süreçlerinde birtakım zorluklar ve sınırlamalar bulunmaktadır. Bunların başında, pist ve taksi yolu ayrımı gibi havalimanı işletme bölgelerinde, yüksek açıklık oranından kaynaklı sınırlamalar gelmektedir. Bu konuda, katlanır kanat uçları (folding wingtips) yük hafifletme, uçuş performansı ve operasyonel durumlardaki verimliliği artırması ve sınırlamaları en aza indirmesi nedeniyle büyük ilgi görmektedir. Katlanma açısı adaptasyonuna izin veren mafsallı katlanır kanatçık konsepti ilk olarak Airbus tarafından patentlendi [2]. Yine aynı konsept Boeing tarafından, sürüklemeyi azaltarak performansı iyileştirmesi sağlamak amacıyla 7m kanat açıklığı uzantısı ile B777X modeline uyarlanmıştır.
-                                Diğer bir taraftan, artan açıklık oranıyla beraber gelen esneklik (flexibility) yapıda büyük deformasyonlara neden olmaktadır. Yüksek deformasyonlara sahip son derece esnek (highly flexible) yapılar, uçuş sırasında yeterli ve yüksek seviyede bozuntularla (perturbation) birlikte aeroelastik kararsızlıklara daha duyarlı hale gelmektedir. Bu durum, katlanır kanat mekanizmasına sahip yüksek açıklık oranlı kanatlarda aeroelastik etkilerin incelenmesini, flutter hızının uçuş zarfının dışına ötelenmesini, kullanılan modelin aerodinamik ve aeroelastik açıdan performansının incelenmesini ve daha güvenilir yapılar oluşturulması gerekliliğini ortaya koymuştur.
-                                Bu projenin kapsamı, uçak yapılarının hasarına sebep olan flutter probleminin, katlanır kanat ucu mekanizmasına sahip yüksek açıklık oranlı kanat konfigürasyonları için en iyi tasarıma ulaşmayı sağlayacak çok doğruluklu derin sinir ağı ve co-kriging temsili modelleri ve optimizasyon algoritmalarının kullanılarak önlenmesidir. Yapı üzerinde flutter hızının başlangıç durumuna göre artışının sağlanması ile farklı uçuş koşulları için daha güvenli bir uçuş mümkün kılınabilecektir. Flutter hızının artışını sağlamak adına (1) kanat geometrisinde değişiklikler, (2) katlanır kanatçık sisteminin yerleşimi/geometrisi ve (3) malzeme özellikleri ile ilgili eniyileme sağlanması amaçlanmaktadır. Eniyileme sürecinin hesaplama açısından verimli ve aynı zamanda da güvenilir bir doğrulukta olması (efficent and accurate) istenmektedir. Bu sebeple, optimizasyon ve temsili model algoritmalarında, çok doğruluklu hesaplama yöntemlerinin kullanılması hedeflenmektedir.
-                                Projenin temel amacı, havacılık araştırmalarının son zamanlarda yoğunlaşmış olduğu çevresel, aerodinamik ve havalimanı operasyonları açısından verimli katlanır kanat ucu konseptine sahip yüksek açıklık oranlı kanatların sivil havacılık modellerine uygulanması ve aeroelastik açıdan verimliliğinin incelenmesidir. Ayrıca, Türkiye'de de teknoloji altyapısı kurmak amacı ile öncelikli olarak kurum içi kodların ve yöntemlerin geliştirilmesi, açık kaynaklı kodların adaptasyonu ve bunun için bağlantı ara yüzlerinin geliştirilmesi proje kapsamındaki hedefler arasında yer almaktadır.
-                                </p>
-						</div> <!-- end of text-container -->
-<br>
-<br>
-							<div class="button-container">
-								<a class="btn-solid-reg page-scroll" href="../index.html">Back</a>
-							</div> <!-- end of button-container -->
-
-						</div>
-
-					</div> <!-- end of row -->
-				</div> <!-- end of container -->
-			</div> <!-- end of ex-basic -->
-		<!-- end of terms content -->
-
-
+<div class="pj-actions">
+<a class="pj-back" href="../index.html#projects">BACK</a>
+<!-- PDF: put the file next to this page, or change the link below -->
+<a class="pj-pdf" href="itu-tubitak-mf-aeroelastic.pdf" target="_blank" rel="noreferrer noopener">DOWNLOAD PDF</a>
+</div>
+</article>
+</div>
+</div>
+<!-- end of project content -->
 
 
     <!-- Footer -->
@@ -245,7 +299,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2022. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" target="_blank" rel="noreferrer noopener">Designed by AeroMDO</a></p>
+                    <p class="p-small">Copyright © 2026. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" target="_blank" rel="noreferrer noopener">Designed by AeroMDO</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -264,5 +318,8 @@
     <script src="../js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+(function(){var t=document.querySelectorAll('.pj-tabs button'),l=document.querySelectorAll('.pj-lang');function s(g){t.forEach(function(b){b.classList.toggle('is-on',b.dataset.lang===g);});l.forEach(function(x){x.classList.toggle('px-hidden',x.dataset.lang!==g);});document.documentElement.lang=g;}t.forEach(function(b){b.addEventListener('click',function(){s(b.dataset.lang);});});s('en');})();
+</script>
 </body>
 </html>

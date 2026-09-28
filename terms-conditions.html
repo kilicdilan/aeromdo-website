@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Terms Conditions - Aria - Business HTML Landing Page Template</title>
+    <title>Terms & Conditions | ITU AeroMDO Lab</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -31,6 +31,50 @@
 
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+<style>
+/* Legal pages — redesign (matches Publications) */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.lg-wrap { display:grid; grid-template-columns:220px minmax(0,1fr); gap:40px; align-items:start; }
+.lg-toc { position:sticky; top:96px; display:flex; flex-direction:column; gap:2px; }
+.lg-toc .lg-label { font:500 11px Montserrat,sans-serif; letter-spacing:.18em; color:#6b7684; margin-bottom:.6rem; }
+.lg-toc a { padding:.5rem .9rem; font:500 13px/1.4 Montserrat,sans-serif; color:#142b4d; text-decoration:none; border-left:2px solid #dfe4ea; transition:border-color .2s, color .2s; }
+.lg-toc a:hover { color:#0f9c7c; border-left-color:#14bf98; text-decoration:none; }
+.lg-doc { background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); padding:2.5rem 2.75rem; }
+.lg-meta { margin:0 0 1.75rem; padding-bottom:1.25rem; border-bottom:1px solid #e3e8ee; font:500 12px Montserrat,sans-serif; letter-spacing:.1em; text-transform:uppercase; color:#6b7684; }
+.lg-intro { margin:0 0 .5rem; font-size:16px; line-height:1.75; color:#34435a; text-align:left; }
+.lg-sec { padding:1.75rem 0 .25rem; scroll-margin-top:96px; }
+.lg-sec + .lg-sec { border-top:1px solid #eef1f4; }
+.lg-sec h3 { display:flex; align-items:baseline; gap:14px; margin:0 0 .85rem; font:700 1.15rem/1.35 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+.lg-sec h3 span { font:700 12px Montserrat,sans-serif; letter-spacing:.12em; color:#14bf98; }
+.lg-sec p, .lg-sec li { font-size:15px; line-height:1.75; color:#34435a; text-align:left; }
+.lg-sec p { margin:0 0 .85rem; }
+.lg-sec ul { margin:0 0 .85rem; padding:0; list-style:none; display:flex; flex-direction:column; gap:.5rem; }
+.lg-sec li { position:relative; padding-left:1.4rem; }
+.lg-sec li::before { content:""; position:absolute; left:2px; top:.7em; width:6px; height:6px; background:#14bf98; transform:rotate(45deg); }
+.lg-sec a { color:#0f8a6e; text-decoration:underline; text-underline-offset:2px; }
+.lg-sec a:hover { color:#142b4d; }
+.lg-back { margin-top:2rem; }
+.lg-back a { display:inline-block; font:700 13px Montserrat,sans-serif; letter-spacing:.12em; color:#142b4d; border:2px solid #142b4d; padding:12px 30px; border-radius:32px; text-decoration:none; transition:background .2s,color .2s; }
+.lg-back a:hover { background:#142b4d; color:#fff; text-decoration:none; }
+@media (max-width: 991.98px) { .lg-wrap { grid-template-columns:1fr; gap:20px; } .lg-toc { position:static; } }
+@media (max-width: 575.98px) { .ex-header-2 { padding:7.5rem 0 2.5rem; } .ex-header-2 h2 { font-size:2.2rem; } .lg-doc { padding:1.75rem 1.25rem; } }
+</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -47,8 +91,6 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
         <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
@@ -63,45 +105,27 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#header">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="index.html#header">HOME<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#intro">INTRO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#services">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#callMe">CALL ME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#projects">PROJECTS</a>
-                </li>
-
-                <!-- Dropdown Menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="index.html#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
-
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
                 <span class="fa-stack">
-                    <a href="#your-link">
+                    <a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
                         <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
                     </a>
                 </span>
                 <span class="fa-stack">
-                    <a href="#your-link">
+					<a href="https://instagram.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+						<span class="hexagon"></span>
+						<i class="fab fa-instagram fa-stack-1x"></i>
+					</a>
+				</span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
                         <span class="hexagon"></span>
                         <i class="fab fa-twitter fa-stack-1x"></i>
                     </a>
@@ -113,11 +137,11 @@
 
 
     <!-- Header -->
-    <header id="header" class="ex-header">
+    <header id="header" class="ex-header-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Terms & Conditions</h1>
+                <div class="col-md-12">
+                    <h2>Terms &amp; Conditions</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -131,7 +155,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Terms & Conditions</span>
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Terms &amp; Conditions</span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -139,85 +163,66 @@
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
 
-
-    <!-- Terms Content -->
-    <div class="ex-basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h3>Limitations Of Liability</h3>
-                        <p>Aria also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
-                        <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
-                        <ul class="list-unstyled li-space-lg indent">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">The geographic area where you use your computer and mobile devices</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Your full name, username, and email address and other contact details</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">A unique Aria user ID (an alphanumeric string) which is assigned to you upon registration</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Other optional information as part of your account profile</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Other information submitted by you or your organizational representatives via various methods</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-
-                    <div class="text-container">
-                        <h3>Terms And Conditions</h3>
-                        <p>Under no circumstances shall Aria be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if Aria or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof.</p>
-                    </div> <!-- end of text-container -->
-
-                    <div class="text-container">
-                        <h3>License Types & Template Usage</h3>
-                        <p>All our templates inherit the GNU general public license from HTML. All .PSD & CSS files are packaged separately and are not licensed under the GPL 2.0. Instead, these files inherit Aria Personal Use License. These files are given to all Clients on a personal use basis. You may not offer them, <a class="green" href="#your-link">modified or unmodified</a>, for redistribution or resale of any kind. You can’t use one of our themes on a HTML domain. More on HTML Vs CSS, you can read here. You can use our templates do develop sites for your clients.</p>
-                        <p>Services help our customers promote their products and services, marketing and advertising; engaging audiences; scheduling and publishing messages; and analyze the results.</p>
-                    </div> <!-- end of text-container -->
-
-                    <div class="text-container">
-                        <h3>Designer Membership And How It Applies</h3>
-                        <p>By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services.</p>
-                    </div> <!-- end of text-container -->
-
-                    <div class="text-container last">
-                        <h3>Assets Used In The Live Preview Content</h3>
-                        <p>Aria Landing Page uses tracking technology on the landing page, in the Applications, and in the Platforms, including mobile application identifiers and a unique Hootsuite user ID to help us recognize you across different Services, to monitor usage and web traffic routing for the Services, and to customize and improve the Services. By visiting Aria or using the Services you agree to the use of cookies in your browser and HTML-based emails. Cookies are small text files placed on your device when you visit a <a class="green" href="#your-link">web site</a> in order to track use of the site and to improve your user experience.</p>
-                        <a class="btn-outline-reg" href="index.html">BACK</a>
-                    </div> <!-- end of text-container -->
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic -->
-    <!-- end of terms content -->
-
-
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Terms & Conditions</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
+    <!-- Legal Content -->
+<div class="ex-basic-2">
+<div class="container">
+<div class="lg-wrap">
+<nav class="lg-toc"><div class="lg-label">CONTENTS</div>
+<a href="#s1">01 · About This Website</a>
+<a href="#s2">02 · Use of Content</a>
+<a href="#s3">03 · Publications</a>
+<a href="#s4">04 · Accuracy of Information</a>
+<a href="#s5">05 · External Links</a>
+<a href="#s6">06 · Limitation of Liability</a>
+<a href="#s7">07 · Privacy</a>
+<a href="#s8">08 · Governing Law</a>
+<a href="#s9">09 · Contact</a>
+</nav>
+<article class="lg-doc">
+<p class="lg-meta">Last updated: September 2026</p>
+<p class="lg-intro">By accessing and using this website (aeromdo.itu.edu.tr), you agree to the following terms. If you do not agree, please do not use the website.</p>
+<section class="lg-sec" id="s1">
+<h3><span>01</span>About This Website</h3>
+<p>This website is operated by AeroMDO Lab at the Faculty of Aeronautics and Astronautics, Istanbul Technical University. It provides information about the lab’s research, projects, publications, people and events for academic and informational purposes.</p>
+</section>
+<section class="lg-sec" id="s2">
+<h3><span>02</span>Use of Content</h3>
+<p>Unless stated otherwise, text, images, logos and other materials on this website belong to AeroMDO Lab or Istanbul Technical University. You may view, download and share them for personal, educational and non-commercial purposes with appropriate credit to “ITU AeroMDO Lab”. Any other use, including commercial use or modification, requires our prior written permission.</p>
+</section>
+<section class="lg-sec" id="s3">
+<h3><span>03</span>Publications</h3>
+<p>Publication listings are provided for reference. Copyright of the published papers belongs to their respective publishers and authors. Please access full texts through the provided DOI or publisher links and cite the original sources.</p>
+</section>
+<section class="lg-sec" id="s4">
+<h3><span>04</span>Accuracy of Information</h3>
+<p>We try to keep the information on this website accurate and up to date, but we make no guarantees about its completeness or accuracy. Content may change without notice and does not constitute professional or engineering advice.</p>
+</section>
+<section class="lg-sec" id="s5">
+<h3><span>05</span>External Links</h3>
+<p>This website contains links to external websites such as publishers, partners and social media. We are not responsible for the content, availability or privacy practices of those sites.</p>
+</section>
+<section class="lg-sec" id="s6">
+<h3><span>06</span>Limitation of Liability</h3>
+<p>AeroMDO Lab and Istanbul Technical University are not liable for any direct or indirect damage arising from the use of, or inability to use, this website or its content.</p>
+</section>
+<section class="lg-sec" id="s7">
+<h3><span>07</span>Privacy</h3>
+<p>Our handling of personal data is described in the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+</section>
+<section class="lg-sec" id="s8">
+<h3><span>08</span>Governing Law</h3>
+<p>These terms are governed by the laws of the Republic of Türkiye. Istanbul courts and enforcement offices have jurisdiction over any disputes.</p>
+</section>
+<section class="lg-sec" id="s9">
+<h3><span>09</span>Contact</h3>
+<p>Questions about these terms can be sent via the <a href="index.html#contact">contact section</a> of this website.</p>
+</section>
+<div class="lg-back"><a href="index.html">BACK TO HOME</a></div>
+</article>
+</div>
+</div>
+</div>
+<!-- end of legal content -->
 
 
     <!-- Footer -->

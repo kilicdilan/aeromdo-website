@@ -1,1 +1,321 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Generation of Generalized Aerodynamic Forces Through CFD-Based Methods for Flutter Prediction | ITU AeroMDO Lab</title><link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet"><link href="../css/bootstrap.css" rel="stylesheet"><link href="../css/fontawesome-all.css" rel="stylesheet"><link href="../css/styles.css" rel="stylesheet"><link rel="icon" href="../images/favicon.png"></head><body data-spy="scroll" data-target=".fixed-top"><nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top"><a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.svg" alt="AeroMDO Lab"></a></nav><header class="ex-header"><div class="container"><div class="row"><div class="col-lg-12"><h1>Generation of Generalized Aerodynamic Forces Through CFD-Based Methods for Flutter Prediction</h1></div></div></div></header><div class="ex-basic-2"><div class="container"><div class="row"><div class="col-lg-12"><h3>Project Information</h3><p><strong>Funding:</strong> Turkish Aerospace Industries Funding Program</p><p><strong>Director:</strong> Melike Nikbay</p><p><strong>Period:</strong> Sep 2024 - May 2025</p><h3>Summary</h3><p><!-- TODO NEXT STEP: Add project summary. --></p><a class="btn-outline-reg" href="../index.html#projects">BACK</a></div></div></div></div><script src="../js/jquery.min.js"></script><script src="../js/bootstrap.min.js"></script><script src="../js/scripts.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://aeromdo.itu.edu.tr/images/index-projects/projects-1.jpg" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Generation of Generalized Aerodynamic Forces Through CFD-Based Methods for Flutter Prediction | ITU AeroMDO Lab</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/fontawesome-all.css" rel="stylesheet">
+    <link href="../css/swiper.css" rel="stylesheet">
+	<link href="../css/magnific-popup.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="icon" href="../images/favicon.png">
+<style>
+/* Project pages — redesign (matches Publications/Alumni) */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-header-2 .pj-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .pj-eyebrow i { width:8px; height:8px; border-radius:50%; background:#8a95a3; }
+.ex-header-2 .pj-eyebrow i.is-live { background:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.2); }
+.ex-header-2 h2.pj-title { font-size:2.2rem; line-height:1.25; max-width:980px; text-wrap:balance; }
+.ex-header-2 h2.pj-title::before { display:none; }
+.pj-meta { display:flex; flex-wrap:wrap; gap:12px 36px; margin-top:1.5rem; }
+.pj-meta div { display:flex; flex-direction:column; gap:3px; }
+.pj-meta span { font:500 11px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#6b7684; }
+.pj-meta b { font:700 14px Montserrat,sans-serif; color:#142b4d; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.pj-doc { background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); padding:2.25rem 2.75rem 2.5rem; max-width:980px; }
+.pj-tabs { display:flex; gap:8px; margin-bottom:1.75rem; padding-bottom:1.25rem; border-bottom:1px solid #e3e8ee; }
+.pj-tabs button { border:1px solid #cfd7e0; background:#fff; color:#142b4d; padding:8px 18px; border-radius:40px; font:500 13px Montserrat,sans-serif; cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
+.pj-tabs button:hover { border-color:#142b4d; }
+.pj-tabs button.is-on { background:#142b4d; border-color:#142b4d; color:#fff; }
+.pj-lang.px-hidden { display:none; }
+.pj-sec + .pj-sec { margin-top:1.75rem; }
+.pj-sec h3 { display:flex; align-items:center; gap:10px; margin:0 0 .85rem; font:700 12px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#0f8a6e; text-align:left; }
+.pj-sec h3::before { content:""; width:8px; height:8px; background:#14bf98; transform:rotate(45deg); }
+.pj-sec p { margin:0 0 .9rem; font-size:15.5px; line-height:1.8; color:#34435a; text-align:left; text-wrap:pretty; }
+.pj-sec p.pj-empty { color:#8a95a3; font-style:italic; }
+.pj-fig { margin:1.75rem 0; }
+.pj-fig img { display:block; width:100%; height:auto; border:1px solid #e3e8ee; }
+.pj-fig figcaption { margin-top:.6rem; font:500 13px Montserrat,sans-serif; color:#6b7684; text-align:left; }
+.pj-related { margin-top:2.25rem; padding-top:1.5rem; border-top:1px solid #e3e8ee; }
+.pj-related .pj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr)); gap:16px; }
+.pj-related a.pj-card { display:flex; flex-direction:column; gap:6px; padding:1rem 1.1rem; border:1px solid #e3e8ee; border-top:3px solid #14bf98; text-decoration:none; transition:border-color .3s, box-shadow .3s, transform .3s; }
+.pj-related a.pj-card:hover { transform:translateY(-3px); border-top-color:#142b4d; box-shadow:0 10px 24px rgba(20,43,77,.1); text-decoration:none; }
+.pj-related .pj-card b { font:700 14px/1.45 Montserrat,sans-serif; color:#142b4d; }
+.pj-related .pj-card span { font:500 12px Montserrat,sans-serif; color:#6b7684; }
+.pj-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:2.25rem; }
+.pj-actions a { display:inline-flex; align-items:center; gap:10px; padding:13px 30px; border-radius:32px; border:2px solid #142b4d; font:700 13px Montserrat,sans-serif; letter-spacing:.12em; text-decoration:none; transition:background .2s,color .2s,border-color .2s; }
+.pj-actions a.pj-back { color:#142b4d; background:#fff; }
+.pj-actions a.pj-back::before { content:"←"; }
+.pj-actions a.pj-back:hover { background:#142b4d; color:#fff; text-decoration:none; }
+.pj-actions a.pj-pdf { color:#fff; background:#142b4d; }
+.pj-actions a.pj-pdf::before { content:"\f1c1"; font-family:"Font Awesome 5 Free"; font-weight:400; }
+.pj-actions a.pj-pdf:hover { background:#24467a; border-color:#24467a; color:#fff; text-decoration:none; }
+@media (max-width: 575.98px) { .ex-header-2 { padding:7.5rem 0 2.5rem; } .ex-header-2 h2.pj-title { font-size:1.55rem; } .pj-doc { padding:1.5rem 1.25rem 1.75rem; } .pj-actions a { flex:1 1 100%; justify-content:center; } }
+</style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.svg" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#header">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+					<a href="https://instagram.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+						<span class="hexagon"></span>
+						<i class="fab fa-instagram fa-stack-1x"></i>
+					</a>
+				</span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+<header id="header" class="ex-header-2">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pj-eyebrow"><i class=""></i>PROJECT · COMPLETED</div>
+<h2 class="pj-title">Generation of Generalized Aerodynamic Forces Through CFD-Based Methods for Flutter Prediction</h2>
+<div class="pj-meta"><div><span>Funding</span><b>Turkish Aerospace Industries Funding Program</b></div><div><span>Director</span><b>Melike Nikbay</b></div><div><span>Period</span><b>Sep 2024 - May 2025</b></div></div>
+</div>
+</div>
+</div>
+</header>
+<!-- end of header -->
+
+<!-- Breadcrumbs -->
+<div class="ex-basic-1">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="breadcrumbs">
+<a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><a href="../index.html#projects">Projects</a><i class="fa fa-angle-double-right"></i><span>Project Details</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end of breadcrumbs -->
+
+<!-- Project Content -->
+<div class="ex-basic-2">
+<div class="container">
+<article class="pj-doc">
+<div class="pj-tabs" role="tablist"><button type="button" class="is-on" data-lang="en">English</button><button type="button" data-lang="tr">Türkçe</button></div>
+<!-- ENGLISH -->
+<div class="pj-lang" data-lang="en">
+<section class="pj-sec">
+<h3>Project Summary</h3>
+<!-- Add the English project summary here (one <p> per paragraph) -->
+<p class="pj-empty">Project summary will be added soon.</p>
+</section>
+</div>
+<!-- TÜRKÇE -->
+<div class="pj-lang" data-lang="tr">
+<section class="pj-sec">
+<h3>Proje Özeti</h3>
+<!-- Türkçe proje özetini buraya ekleyin (her paragraf için bir <p>) -->
+<p class="pj-empty">Proje özeti yakında eklenecektir.</p>
+</section>
+</div>
+
+
+<div class="pj-actions">
+<a class="pj-back" href="../index.html#projects">BACK</a>
+<!-- PDF: put the file next to this page, or change the link below -->
+<a class="pj-pdf" href="tusas-cfd-flutter-gaf.pdf" target="_blank" rel="noreferrer noopener">DOWNLOAD PDF</a>
+</div>
+</article>
+</div>
+</div>
+<!-- end of project content -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+				<h4>STAY CONNECTED</h4>
+                <!-- Contact Form -->
+				<form id="callMeForm" data-toggle="validator" data-focus="false">
+					<div class="form-group">
+						<input type="email" class="form-control-input" id="lemail" name="lemail" required>
+						<label class="label-control" for="lemail">Email</label>
+						<div class="help-block with-errors"></div>
+                    </div>
+                </div> <!-- end of col -->
+
+             	<div class="col-md-3">
+                <h4>  <br></h4>
+					<div class="form-group">
+							<button type="submit" class="form-control-submit-button-2">SUBSCRIBE</button>
+						</div>
+						<div class="form-message">
+							<div id="lmsgSubmit" class="h3 text-center hidden"></div>
+                        </div>
+
+				</form>
+				<!-- end of contact form -->
+                </div> <!-- end of col -->
+
+                <div class="col-md-3">
+
+     <div class="text-container">
+                        <h4>LINKS</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="https://www.itu.edu.tr/en/homepage" target="_blank" rel="noreferrer noopener">Istanbul Technical University</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://uubf.itu.edu.tr/en/home" target="_blank" rel="noreferrer noopener">Faculty of Aeronautics and Astronautics</a>
+                            </li>
+                          <!--  <li>
+                                <a class="white" href="../privacy-policy.html">Privacy Policy</a>
+                            </li> -->
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+
+                <div class="col-md-3">
+                    <div class="text-container">
+                        <h4>SOCIAL</h4>
+					<!-- social icons -->
+                      <span class="fa-stack">
+						   <a href="https://www.linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
+							   <span class="hexagon"></span>
+							   <i class="fab fa-linkedin-in fa-stack-1x"></i>
+						   </a>
+                        </span>
+                        <span class="fa-stack">
+						  <a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+							<span class="hexagon"></span>
+							<i class="fab fa-twitter fa-stack-1x"></i>
+						  </a>
+					   </span>
+					   <span class="fa-stack">
+						  <a href="https://instagram.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+							<span class="hexagon"></span>
+							<i class="fab fa-instagram fa-stack-1x"></i>
+						  </a>
+                       </span>
+					<!-- end of social icons -->
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2026. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" target="_blank" rel="noreferrer noopener">Designed by AeroMDO</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="../js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+(function(){var t=document.querySelectorAll('.pj-tabs button'),l=document.querySelectorAll('.pj-lang');function s(g){t.forEach(function(b){b.classList.toggle('is-on',b.dataset.lang===g);});l.forEach(function(x){x.classList.toggle('px-hidden',x.dataset.lang!==g);});document.documentElement.lang=g;}t.forEach(function(b){b.addEventListener('click',function(){s(b.dataset.lang);});});s('en');})();
+</script>
+</body>
+</html>

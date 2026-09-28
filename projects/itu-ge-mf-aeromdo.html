@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="AeroMDO (Aerospace Multidisciplinary Design Optimization) Lab's purpose is to develop leading-edge aerospace & defense technology and to move these out of the lab into the real world. Its current research interests mainly focus on a number of disciplines and techniques: Aeroelasticity, Aerodynamics, Sonic Boom Minimization, Reduced Order Modeling, MDO, UQ, and Deep Learning.">
-    <meta name="author" content="AeroMDO Lab">
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="ITU Aerospace Multidisciplinary Design Optimization Laboratory" /> <!-- website name -->
-	<meta property="og:site" content="https://aeromdo.itu.edu.tr/" /> <!-- website link -->
-	<meta property="og:title" content="ITU AeroMDO Lab Current Projects"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Posted on AeroMDO Lab's website" /> <!-- description shown in the actual shared post -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
 	<meta property="og:image" content="https://aeromdo.itu.edu.tr/images/index-projects/projects-1.jpg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://www.linkedin.com/company/aeromdolab" /> <!-- where do you want your post to link to -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>ITU AeroMDO Lab Current Projects</title>
+    <title>Development of Multi-Fidelity Surrogate Model and Multi-Objective Optimization Code | ITU AeroMDO Lab</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -31,6 +31,64 @@
 
 	<!-- Favicon  -->
     <link rel="icon" href="../images/favicon.png">
+<style>
+/* Project pages — redesign (matches Publications/Alumni) */
+body { background:#f4f6f9; }
+.ex-header-2 { background:#eaf1f7 linear-gradient(180deg,#f4f8fc,#e6eef6); padding:9.5rem 0 3.5rem; text-align:left; border-bottom:0; }
+.ex-header-2 h2 { margin:0; font:700 3rem/1.1 Montserrat,sans-serif; color:#142b4d; text-align:left; }
+@media (min-width: 768px) {
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link { color:#142b4d; }
+  .navbar-custom:not(.top-nav-collapse) .nav-item .nav-link:hover { color:#0f9c7c; }
+}
+.navbar-custom:not(.top-nav-collapse) .navbar-toggler-awesome { color:#142b4d; }
+.navbar-custom .social-icons .fa-stack-1x { color:#fff !important; }
+.ex-header-2 h2::before { content:"ITU · AEROMDO LAB"; display:flex; align-items:center; gap:12px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .px-stats { margin:1.25rem 0 0; display:flex; flex-wrap:wrap; gap:10px 28px; font:500 13px Montserrat,sans-serif; letter-spacing:.06em; color:#4a5566; }
+.ex-header-2 .px-stats b { font-weight:700; color:#142b4d; font-size:15px; margin-right:6px; }
+.ex-basic-1 { background:linear-gradient(180deg,#e6eef6 0%,#f4f6f9 100%); padding:0 0 .5rem; border:0; }
+.ex-basic-1 .breadcrumbs { display:inline-flex; align-items:center; padding:.6rem 0; border-top:1px solid #d3dde8; min-width:100%; }
+.ex-basic-1 .breadcrumbs { font:500 13px Montserrat,sans-serif; color:#6b7684; }
+.ex-basic-1 .breadcrumbs a { color:#142b4d; } .ex-basic-1 .breadcrumbs i { margin:0 .6rem; color:#14bf98; }
+.ex-header-2 .pj-eyebrow { display:flex; align-items:center; gap:10px; margin-bottom:1rem; font:500 12px Montserrat,sans-serif; letter-spacing:.2em; color:#0f8a6e; }
+.ex-header-2 .pj-eyebrow i { width:8px; height:8px; border-radius:50%; background:#8a95a3; }
+.ex-header-2 .pj-eyebrow i.is-live { background:#14bf98; box-shadow:0 0 0 3px rgba(20,191,152,.2); }
+.ex-header-2 h2.pj-title { font-size:2.2rem; line-height:1.25; max-width:980px; text-wrap:balance; }
+.ex-header-2 h2.pj-title::before { display:none; }
+.pj-meta { display:flex; flex-wrap:wrap; gap:12px 36px; margin-top:1.5rem; }
+.pj-meta div { display:flex; flex-direction:column; gap:3px; }
+.pj-meta span { font:500 11px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#6b7684; }
+.pj-meta b { font:700 14px Montserrat,sans-serif; color:#142b4d; }
+.ex-basic-2 { padding:2rem 0 5rem; background:#f4f6f9; }
+.pj-doc { background:#fff; box-shadow:0 1px 3px rgba(20,43,77,.08); padding:2.25rem 2.75rem 2.5rem; max-width:980px; }
+.pj-tabs { display:flex; gap:8px; margin-bottom:1.75rem; padding-bottom:1.25rem; border-bottom:1px solid #e3e8ee; }
+.pj-tabs button { border:1px solid #cfd7e0; background:#fff; color:#142b4d; padding:8px 18px; border-radius:40px; font:500 13px Montserrat,sans-serif; cursor:pointer; transition:background .2s,color .2s,border-color .2s; }
+.pj-tabs button:hover { border-color:#142b4d; }
+.pj-tabs button.is-on { background:#142b4d; border-color:#142b4d; color:#fff; }
+.pj-lang.px-hidden { display:none; }
+.pj-sec + .pj-sec { margin-top:1.75rem; }
+.pj-sec h3 { display:flex; align-items:center; gap:10px; margin:0 0 .85rem; font:700 12px Montserrat,sans-serif; letter-spacing:.14em; text-transform:uppercase; color:#0f8a6e; text-align:left; }
+.pj-sec h3::before { content:""; width:8px; height:8px; background:#14bf98; transform:rotate(45deg); }
+.pj-sec p { margin:0 0 .9rem; font-size:15.5px; line-height:1.8; color:#34435a; text-align:left; text-wrap:pretty; }
+.pj-sec p.pj-empty { color:#8a95a3; font-style:italic; }
+.pj-fig { margin:1.75rem 0; }
+.pj-fig img { display:block; width:100%; height:auto; border:1px solid #e3e8ee; }
+.pj-fig figcaption { margin-top:.6rem; font:500 13px Montserrat,sans-serif; color:#6b7684; text-align:left; }
+.pj-related { margin-top:2.25rem; padding-top:1.5rem; border-top:1px solid #e3e8ee; }
+.pj-related .pj-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr)); gap:16px; }
+.pj-related a.pj-card { display:flex; flex-direction:column; gap:6px; padding:1rem 1.1rem; border:1px solid #e3e8ee; border-top:3px solid #14bf98; text-decoration:none; transition:border-color .3s, box-shadow .3s, transform .3s; }
+.pj-related a.pj-card:hover { transform:translateY(-3px); border-top-color:#142b4d; box-shadow:0 10px 24px rgba(20,43,77,.1); text-decoration:none; }
+.pj-related .pj-card b { font:700 14px/1.45 Montserrat,sans-serif; color:#142b4d; }
+.pj-related .pj-card span { font:500 12px Montserrat,sans-serif; color:#6b7684; }
+.pj-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:2.25rem; }
+.pj-actions a { display:inline-flex; align-items:center; gap:10px; padding:13px 30px; border-radius:32px; border:2px solid #142b4d; font:700 13px Montserrat,sans-serif; letter-spacing:.12em; text-decoration:none; transition:background .2s,color .2s,border-color .2s; }
+.pj-actions a.pj-back { color:#142b4d; background:#fff; }
+.pj-actions a.pj-back::before { content:"←"; }
+.pj-actions a.pj-back:hover { background:#142b4d; color:#fff; text-decoration:none; }
+.pj-actions a.pj-pdf { color:#fff; background:#142b4d; }
+.pj-actions a.pj-pdf::before { content:"\f1c1"; font-family:"Font Awesome 5 Free"; font-weight:400; }
+.pj-actions a.pj-pdf:hover { background:#24467a; border-color:#24467a; color:#fff; text-decoration:none; }
+@media (max-width: 575.98px) { .ex-header-2 { padding:7.5rem 0 2.5rem; } .ex-header-2 h2.pj-title { font-size:1.55rem; } .pj-doc { padding:1.5rem 1.25rem 1.75rem; } .pj-actions a { flex:1 1 100%; justify-content:center; } }
+</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
 
@@ -47,8 +105,6 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="../index.html">Aria</a> -->
 
         <!-- Image Logo -->
         <a class="navbar-brand logo-image" href="../index.html"><img src="../images/logo.svg" alt="alternative"></a>
@@ -61,166 +117,108 @@
         <!-- end of mobile menu toggle button -->
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link page-scroll" href="../index.html#header">HOME<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link page-scroll" href="../index.html#contact">CONTACT</a>
-				</li>
-			</ul>
-			<span class="nav-item social-icons">
-				<span class="fa-stack">
-					<a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
-						<span class="hexagon"></span>
-						<i class="fab fa-linkedin-in fa-stack-1x"></i>
-					</a>
-				</span>
-				<span class="fa-stack">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#header">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="../index.html#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://linkedin.com/company/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
 					<a href="https://instagram.com/aeromdolab" target="_blank" rel="noreferrer noopener">
 						<span class="hexagon"></span>
 						<i class="fab fa-instagram fa-stack-1x"></i>
 					</a>
 				</span>
-				<span class="fa-stack">
-					<a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
-						<span class="hexagon"></span>
-						<i class="fab fa-twitter fa-stack-1x"></i>
-					</a>
-				</span>
-			</span>
-		</div>
-	</nav> <!-- end of navbar -->
+                <span class="fa-stack">
+                    <a href="https://twitter.com/aeromdolab" target="_blank" rel="noreferrer noopener">
+                        <span class="hexagon"></span>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
 
     <!-- Header -->
-    <header id="header" class="ex-header-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Development of Multi-Fidelity Surrogate Model and Multi-Objective Optimization Code (Çok Doğruluklu Temsili Modelleme ve Çok Doğruluklu Optimizasyon Kodlarının Geliştirilmesi)</h2>
-                    <h3><i>GE Global Services Gmbh UK Branch funding program</i></h3>
-                    <h6>September, 2021 - 2022</h6>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of ex-header -->
-    <!-- end of header -->
+<header id="header" class="ex-header-2">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pj-eyebrow"><i class=""></i>PROJECT · COMPLETED</div>
+<h2 class="pj-title">Development of Multi-Fidelity Surrogate Model and Multi-Objective Optimization Code</h2>
+<div class="pj-meta"><div><span>Funding</span><b>GE Global Services GmbH UK Branch</b></div><div><span>Period</span><b>Sep 2021 - 2022</b></div></div>
+</div>
+</div>
+</div>
+</header>
+<!-- end of header -->
 
+<!-- Breadcrumbs -->
+<div class="ex-basic-1">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="breadcrumbs">
+<a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><a href="../index.html#projects">Projects</a><i class="fa fa-angle-double-right"></i><span>Project Details</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end of breadcrumbs -->
 
-    <!-- Breadcrumbs -->
-    <div class="ex-basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumbs">
-                        <a href="../index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Projects</span>
-                    </div> <!-- end of breadcrumbs -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of ex-basic-1 -->
-    <!-- end of breadcrumbs -->
-
-
-
-    <!-- Terms Content -->
-	    <div class="ex-basic-2">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-12">
-	                    <div class="text-container">
-	                        <h3>Aim of the Project</h3>
-	                        <p align="justify">The purpose of this project is to develop a family of codes (1) for multi-fidelity surrogate modeling based on data-fusion methods and (2) for multi-objective optimization
-	                        using posteriori methods in Python programming language. The developed capabilities are validated and demonstrated on well cited benchmark problems.</p>
-						</div> <!-- end of text-container -->
-
-						<div class="text-container">
-	                        <h3>Projenin Amacı</h3>
-	                        <p align="justify">Projenin amacı Python programlama dilinde, (1) veri füzyonu temelli çok doğruluklu temsili modelleme kodu ve (2) çok amaçlı optimizasyon kodu geliştirmektir.
-	                        Geliştirilen kodlar literatürde doğrulama amacı ile kullanılan denklemler aracılığıyla valide edilmektedir.</p>
-						</div> <!-- end of text-container -->
-<!-- figure -->
-	<p><img src="../images/AeroMDO_WEB_GE/itu-ge-mf-aeromdo-fig1.png" width="100%" /></p>
-<!-- end of figure -->
-
-
-	                    <div class="text-container">
-	                        <h3>Summary of the Project</h3>
-	                        <p align="justify">The goal of this Project is to develop multi-fidelity surrogate modelling and multi-objective optimization algorithms. A code for the CoKriging method for multi-fidelity
-	                        surrogate modelling is developed. However, too many design variables are used in industrial design problems. Therefore, the standard CoKriging method can be inefficient for high- dimensional problems.
-	                        Therefore, the CoKriging method has been integrated with the dimension reduction algorithm, making it more efficient for the high-dimensional problem. The CoKriging method and the PLS algorithm are
-	                        integrated, thus reducing the number of analyses and model training times required to establish an accurate surrogate model.</p>
-							<p align="justify">In the second phase of the project, a multi-objective optimization code is to be developed based on the NSGA-III method. The NSGA-III method is more efficient in optimization
-							studies with more than 2 objective functions. There are many criteria in industrial designs, which makes it necessary to have too many objective functions in optimization studies.</p>
-						</div> <!-- end of text-container -->
-
-						<div class="text-container">
-							<h3>Projenin Özeti</h3>
-							<p align="justify">Proje kapsamında çok doğruluklu temsili modelleme ve çok amaçlı optimizasyon algoritmalarını geliştirilmesi amaçlanmaktadır. Çok doğruluklu temsili modelleme için CoKriging
-							yöntemi için kod geliştirilmiştir. Ancak endüstriyel problemlerde çok fazla tasarım değişkeni kullanıldığından standart CoKriging yöntemi yüksek boyutlu problemler için verimsiz olabilmektedir.
-							Hesaplama zamanını azaltmak amacı ile CoKriging yöntemi boyut indirgeme (dimension reduction) algoritması ile entegre edilerek yüksek boyutlu problemler için verimli hale getirilmiştir. CoKriging
-							yöntemi ile PLS algoritması entegre edilmiş olup, böylelikle doğru bir temsili model kurmak için gerekli analiz sayısı ve model eğitim süresi azaltılmıştır.</p>
-							<p align="justify">Projenin ikinci aşamasında çok amaçlı optimizasyon algoritması geliştirilmekte olup, NSGA-III yöntemi için program geliştirilmesi hedeflenmiştir. NSGA-III yöntemi ikiden fazla
-							amaç fonksiyonunun olduğu optimizasyon çalışmalarında daha verimli olmaktadır. Endüstriyel tasarımlarda bir çok kriter olmakta olup, bu da optimizasyon çalışmalarında çok fazla amaç fonksiyonun
-							olmasını gerekli kılmaktadır.</p>
-						</div> <!-- end of text-container -->
-
-<!-- figure -->
-	<p><img src="../images/AeroMDO_WEB_GE/itu-ge-mf-aeromdo-fig2.png" width="100%" /></p>
-<!-- end of figure -->
-
-<br>
-<br>
-
-				<div class="button-container">
-					<a class="btn-solid-reg page-scroll" href="AeroMDO_WEB_GE_MF.pdf" target="_blank" rel="noreferrer noopener">Download PDF</a>
-				</div> <!-- end of button-container -->
-
-<br>
-<br>
-<h3 id="recent-posts">Related Publications</h3>
-
-		<div class="row recent-posts">
-			<div class="col-sm-4">
-				<div class="card h-100">
-					<img class="img-fluid" src="../images/index-publications/publication-5-ek.png" alt="alternative">
-					  <div class="card-body">
-						<h5 class="card-title">
-							<a href="https://www.researchgate.net/publication/353529562_Implementation_of_Multidisciplinary_Multi-Fidelity_Uncertainty_Quantification_Methods_in_Sonic_Boom_Prediction" target="_blank" rel="noreferrer noopener">Implementation of Multidisciplinary MultiFidelity Uncertainty Quantification Methods in Sonic Boom Prediction</a>
-						</h5>
-						2021 AIAA Aviation Forum and Exposition
-					  </div>
-				</div>
-			</div>
-
-			<div class="col-sm-4">
-				<div class="card h-100">
-					<img class="img-fluid" src="../images/index-publications/publication-2-ek.png" alt="alternative">
-					  <div class="card-body">
-						<h5 class="card-title">
-							<a href="https://www.researchgate.net/publication/348241689_Multi-fidelity_Sonic_Boom_Minimization_of_a_Supersonic_Aircraft_by_Parametric_Wing_Shape_Design" target="_blank" rel="noreferrer noopener">Multi-fidelity Sonic Boom Minimization of a Supersonic Aircraft by Parametric Wing Shape Design</a>
-						</h5>
-						2021 AIAA Scitech Forum
-					  </div>
-				</div>
-			</div>
-		</div>
-		<br>
-
-							<div class="button-container">
-								<a class="btn-solid-reg page-scroll" href="../index.html">Back</a>
-							</div> <!-- end of button-container -->
-
-						</div>
-
-					</div> <!-- end of row -->
-				</div> <!-- end of container -->
-			</div> <!-- end of ex-basic -->
-		<!-- end of terms content -->
-
-
+<!-- Project Content -->
+<div class="ex-basic-2">
+<div class="container">
+<article class="pj-doc">
+<div class="pj-tabs" role="tablist"><button type="button" class="is-on" data-lang="en">English</button><button type="button" data-lang="tr">Türkçe</button></div>
+<!-- ENGLISH -->
+<div class="pj-lang" data-lang="en">
+<section class="pj-sec">
+<h3>Aim of the Project</h3>
+<p>The purpose of this project is to develop a family of codes (1) for multi-fidelity surrogate modeling based on data-fusion methods and (2) for multi-objective optimization using posteriori methods in Python programming language. The developed capabilities are validated and demonstrated on well cited benchmark problems.</p>
+</section>
+<section class="pj-sec">
+<h3>Summary of the Project</h3>
+<p>The goal of this Project is to develop multi-fidelity surrogate modelling and multi-objective optimization algorithms. A code for the CoKriging method for multi-fidelity surrogate modelling is developed. However, too many design variables are used in industrial design problems. Therefore, the standard CoKriging method can be inefficient for high- dimensional problems. Therefore, the CoKriging method has been integrated with the dimension reduction algorithm, making it more efficient for the high-dimensional problem. The CoKriging method and the PLS algorithm are integrated, thus reducing the number of analyses and model training times required to establish an accurate surrogate model.</p>
+<p>In the second phase of the project, a multi-objective optimization code is to be developed based on the NSGA-III method. The NSGA-III method is more efficient in optimization studies with more than 2 objective functions. There are many criteria in industrial designs, which makes it necessary to have too many objective functions in optimization studies.</p>
+</section>
+</div>
+<!-- TÜRKÇE -->
+<div class="pj-lang" data-lang="tr">
+<section class="pj-sec">
+<h3>Projenin Amacı</h3>
+<p>Projenin amacı Python programlama dilinde, (1) veri füzyonu temelli çok doğruluklu temsili modelleme kodu ve (2) çok amaçlı optimizasyon kodu geliştirmektir. Geliştirilen kodlar literatürde doğrulama amacı ile kullanılan denklemler aracılığıyla valide edilmektedir.</p>
+</section>
+<section class="pj-sec">
+<h3>Projenin Özeti</h3>
+<p>Proje kapsamında çok doğruluklu temsili modelleme ve çok amaçlı optimizasyon algoritmalarını geliştirilmesi amaçlanmaktadır. Çok doğruluklu temsili modelleme için CoKriging yöntemi için kod geliştirilmiştir. Ancak endüstriyel problemlerde çok fazla tasarım değişkeni kullanıldığından standart CoKriging yöntemi yüksek boyutlu problemler için verimsiz olabilmektedir. Hesaplama zamanını azaltmak amacı ile CoKriging yöntemi boyut indirgeme (dimension reduction) algoritması ile entegre edilerek yüksek boyutlu problemler için verimli hale getirilmiştir. CoKriging yöntemi ile PLS algoritması entegre edilmiş olup, böylelikle doğru bir temsili model kurmak için gerekli analiz sayısı ve model eğitim süresi azaltılmıştır.</p>
+<p>Projenin ikinci aşamasında çok amaçlı optimizasyon algoritması geliştirilmekte olup, NSGA-III yöntemi için program geliştirilmesi hedeflenmiştir. NSGA-III yöntemi ikiden fazla amaç fonksiyonunun olduğu optimizasyon çalışmalarında daha verimli olmaktadır. Endüstriyel tasarımlarda bir çok kriter olmakta olup, bu da optimizasyon çalışmalarında çok fazla amaç fonksiyonun olmasını gerekli kılmaktadır.</p>
+</section>
+</div>
+<figure class="pj-fig"><img src="../images/AeroMDO_WEB_GE/itu-ge-mf-aeromdo-fig1.png" alt="Development of Multi-Fidelity Surrogate Model and Multi-Objective Optimization Code"/></figure>
+<figure class="pj-fig"><img src="../images/AeroMDO_WEB_GE/itu-ge-mf-aeromdo-fig2.png" alt="Development of Multi-Fidelity Surrogate Model and Multi-Objective Optimization Code"/></figure>
+<div class="pj-related"><section class="pj-sec"><h3>Related Publications</h3></section><div class="pj-grid"><a class="pj-card" href="https://www.researchgate.net/publication/353529562_Implementation_of_Multidisciplinary_Multi-Fidelity_Uncertainty_Quantification_Methods_in_Sonic_Boom_Prediction" target="_blank" rel="noreferrer noopener"><b>Implementation of Multidisciplinary Multi-Fidelity Uncertainty Quantification Methods in Sonic Boom Prediction</b><span>2021 AIAA Aviation Forum and Exposition</span></a><a class="pj-card" href="https://www.researchgate.net/publication/348241689_Multi-fidelity_Sonic_Boom_Minimization_of_a_Supersonic_Aircraft_by_Parametric_Wing_Shape_Design" target="_blank" rel="noreferrer noopener"><b>Multi-fidelity Sonic Boom Minimization of a Supersonic Aircraft by Parametric Wing Shape Design</b><span>2021 AIAA SciTech Forum</span></a></div></div>
+<div class="pj-actions">
+<a class="pj-back" href="../index.html#projects">BACK</a>
+<!-- PDF: put the file next to this page, or change the link below -->
+<a class="pj-pdf" href="AeroMDO_WEB_GE_MF.pdf" target="_blank" rel="noreferrer noopener">DOWNLOAD PDF</a>
+</div>
+</article>
+</div>
+</div>
+<!-- end of project content -->
 
 
     <!-- Footer -->
@@ -306,7 +304,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2022. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" target="_blank" rel="noreferrer noopener">Designed by AeroMDO</a></p>
+                    <p class="p-small">Copyright © 2026. All Rights Reserved. <a href="https://aeromdo.itu.edu.tr/" target="_blank" rel="noreferrer noopener">Designed by AeroMDO</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -325,5 +323,8 @@
     <script src="../js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+<script>
+(function(){var t=document.querySelectorAll('.pj-tabs button'),l=document.querySelectorAll('.pj-lang');function s(g){t.forEach(function(b){b.classList.toggle('is-on',b.dataset.lang===g);});l.forEach(function(x){x.classList.toggle('px-hidden',x.dataset.lang!==g);});document.documentElement.lang=g;}t.forEach(function(b){b.addEventListener('click',function(){s(b.dataset.lang);});});s('en');})();
+</script>
 </body>
 </html>
